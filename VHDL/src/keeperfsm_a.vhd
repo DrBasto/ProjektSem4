@@ -12,7 +12,7 @@ ARCHITECTURE ar1 OF keeper_fsm IS
         END IF;
       END PROCESS clkd;
     
-      st_trans: PROCESS (now_st, enters_s, exit_s, maxr_s, done_s, finish_s)
+      st_trans: PROCESS (now_st, enter_s, exit_s, maxr_s, done_s, finish_s)
       BEGIN
         nxt_st <= idle_st;
         CASE now_st IS
