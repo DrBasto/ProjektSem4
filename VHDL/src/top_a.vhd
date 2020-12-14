@@ -34,7 +34,7 @@ ARCHITECTURE ar1 OF top IS
 BEGIN
 
   top_clock_divider : clock_divider PORT MAP (cp_i,rb_i,br_s,sec_s);
-  counting_unit: cu1 PORT MAP (cp_i, rb_i, cl_i, cup_i,cdown_i, headcount_s, maxr_s); -- Counting Unit
+  counting_unit: cu1 PORT MAP (cp_i, rb_i, cl_i, cup_s,cdown_s, headcount_s, maxr_s); -- Counting Unit
   top_event_logger : event_logger PORT MAP (cp_i, rb_i, s1_i, s2_i, s3_i, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
   uart : uat PORT MAP (cp_i, rb_i, detect_s, br_s, headcount_s, event_s, txd_s, tled_s,done_s); -- UART
   int : interface PORT MAP (cp_i, rb_i, br_s,  event_s, headcount_s, detect_s,  sdo_s, sdv_s, stx_s,finish_s); -- 3WireInterface
