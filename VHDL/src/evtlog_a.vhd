@@ -10,7 +10,7 @@ BEGIN
   EL2 : keeper_fsm PORT MAP (enter_s, exit_s, maxr_s, done_s, finish_s,detect_s,event_s,red_o,grn_o,sound_o);
 
   
-  finish_o <= finish_s;     -- data transmission
+  --finish_o <= finish_s;    
 
 
 END ar1;
