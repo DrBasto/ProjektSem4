@@ -10,7 +10,7 @@ ENTITY c10en IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
-  enable_i : IN STD_LOGIC;
+  enable_i : IN std_logic;
   cout_o : OUT std_logic
   );
 END c10en;

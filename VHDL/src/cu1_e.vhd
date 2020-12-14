@@ -12,6 +12,6 @@ PORT(
   cup_i : IN std_logic;
   cdown_i : IN std_logic;
   headcount_o : OUT std_logic_vector(5 DOWNTO 0);
-  maxr_o : OUT std_logic
+  maxr_s : OUT std_logic
   );
 END cu1;
