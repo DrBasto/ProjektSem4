@@ -13,6 +13,8 @@ PORT(
     s1_i   : IN  std_logic;
     s2_i   : IN  std_logic;
     s3_i   : IN  std_logic;
+    done_s : IN std_logic;
+    finish_s : IN std_logic;
     cup_s  : OUT std_logic;
     cdown_s: OUT std_logic;
     enter_s: OUT std_logic;

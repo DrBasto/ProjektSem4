@@ -14,9 +14,9 @@ PORT(
   event_s : IN std_logic_vector(1 DOWNTO 0);
   headcount_s : IN std_logic_vector(5 DOWNTO 0);
   detect_s : IN std_logic; 
-  sec_o : OUT std_logic;
   sdo_o  : OUT std_logic;
   sdv_o  : OUT std_logic;
-  stx_o  : OUT std_logic
+  stx_o  : OUT std_logic;
+  finish_s : OUT std_logic
   );
 END interface;

@@ -12,7 +12,7 @@ ARCHITECTURE ar1 OF keeper_fsm IS
         END IF;
       END PROCESS clkd;
     
-      st_trans: PROCESS (now_st, enters_s, exit_s, maxr_s)
+      st_trans: PROCESS (now_st, enters_s, exit_s, maxr_s, done_s, finish_s)
       BEGIN
         nxt_st <= idle_st;
         CASE now_st IS
@@ -24,10 +24,10 @@ ARCHITECTURE ar1 OF keeper_fsm IS
             WHEN maxreach_st => IF (enter_s='0' AND exit_s='1') THEN nxt_st <= idle_st;
                             ELSE                                    nxt_st <= maxreach_st;
                             END IF;
-            WHEN entry_st => IF (enter_s='0' AND exit_s='0')   THEN nxt_st <= idle_st;
+            WHEN entry_st => IF (finish_s='1' AND done_s='1')   THEN nxt_st <= idle_st;
                             ELSE                                    nxt_st <= entry_st;
                             END IF;
-            WHEN exit_st => IF (enter_s='0' AND exit_s='0')   THEN nxt_st <= idle_st;
+            WHEN exit_st => IF (finish_s='1' AND done_s='1')   THEN nxt_st <= idle_st;
                             ELSE                                    nxt_st <= exit_st;
                             END IF;
                 

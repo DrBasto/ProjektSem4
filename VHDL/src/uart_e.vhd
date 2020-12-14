@@ -14,7 +14,8 @@ event_s : IN std_logic_vector(1 DOWNTO 0);
 headcount_s :  IN std_logic_vector(5 DOWNTO 0);
 detect_s : IN std_logic;
 txd_o : OUT std_logic;
-tled_o : OUT std_logic
+tled_o : OUT std_logic;
+done_s : OUT std_logic
 );
 END uat;
 

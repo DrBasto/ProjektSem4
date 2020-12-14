@@ -10,8 +10,10 @@ PORT(
     enter_s : IN std_logic;
     exit_s : IN std_logic;
     maxr_s : IN std_logic;
+    done_s : IN std_logic;
+    finish_s : IN std_logic;
     detect_s : OUT std_logic;
-    event_s : OUT std_logic;
+    event_s : OUT std_logic_vector(1 DOWNTO 0);
     red_o : OUT std_logic;
     grn_o : OUT std_logic;
     sound_o : OUT std_logic
