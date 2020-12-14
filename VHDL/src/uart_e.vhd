@@ -7,12 +7,12 @@ USE IEEE.NUMERIC_STD.all;
 
 ENTITY uat is
 PORT(
-rb_i : IN std_logic;
 cp_i : IN std_logic;
-br_i : IN std_logic;
-event_s : IN std_logic_vector(1 DOWNTO 0);
-headcount_s :  IN std_logic_vector(5 DOWNTO 0);
+rb_i : IN std_logic;
 detect_s : IN std_logic;
+br_i : IN std_logic;
+headcount_s :  IN std_logic_vector(5 DOWNTO 0);
+event_s : IN std_logic_vector(1 DOWNTO 0);
 txd_o : OUT std_logic;
 tled_o : OUT std_logic;
 done_s : OUT std_logic
