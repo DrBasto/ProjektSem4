@@ -20,7 +20,7 @@ clkbrE0 : c5en PORT MAP(rb_i,cp_i,br_s(1),br_s(0));
 
 
 
-br_o <= br_s(0);      -- KHz, needed for baud-rate
+br_o <= br_s(0);      -- 9,6 KHz, needed for baud-rate
 sec_o <= co_s(0);      -- 1Hz, from clock_dividerE0, 80ns high, ca. 1sec low
 
 END ar1;
