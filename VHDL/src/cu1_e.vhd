@@ -4,13 +4,14 @@ LIBRARY IEEE;
 
 -- ----------------------------------------------------------------------------
 
-ENTITY count IS
+ENTITY cu1 IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
   cl_i : IN std_logic;
-  inc_i : IN std_logic;
-  dec_i : IN std_logic;
-  num_o : OUT std_logic
+  cup_i : IN std_logic;
+  cdown_i : IN std_logic;
+  headcount_o : OUT std_logic_vector(5 DOWNTO 0);
+  maxr_o : OUT std_logic
   );
-END count;
+END cu1;
