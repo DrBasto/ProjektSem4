@@ -30,7 +30,6 @@ PORT(
   stx_o  : OUT std_logic;
   red_o  : OUT std_logic;
   grn_o  : OUT std_logic;
-  sound_o  : OUT std_logic;
-  rb_o   : OUT std_logic
+  sound_o  : OUT std_logic
   );
 END top;
