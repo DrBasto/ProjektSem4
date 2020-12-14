@@ -1,11 +1,3 @@
--- ----------------------------------------------------------------------------
--- top_e.vhd
--- ENTITIE for the TOP
--- 
--- Author:	Sebastian Romero ID:32303
--- 			Bahadir Ülkü
--- Last edited: 2020-11-13
--- ----------------------------------------------------------------------------
 
 LIBRARY IEEE;
     USE IEEE.STD_LOGIC_1164.all;
@@ -20,7 +12,8 @@ PORT(
   rb_i   : IN  std_logic;
   br_i : IN std_logic;
   start_s : IN std_logic;
-  detect_s : IN std_logic;
+  event_s : IN std_logic_vector(1 DOWNTO 0);
+  headcount_s : IN std_logic_vector(5 DOWNTO 0);
   txd_o : OUT std_logic;
   tled_o : OUT std_logic;
   done_s : OUT std_logic

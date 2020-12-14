@@ -16,15 +16,15 @@ LIBRARY IEEE;
 
 ENTITY top is
 PORT(
-  cp_i   : IN  std_logic;
-  rb_i   : IN  std_logic;
-  cl_i   : IN  std_logic;
-  s1_i   : IN  std_logic;
+  cp_i   : IN  std_logic;   --- clock
+  rb_i   : IN  std_logic;   --- reset
+  cl_i   : IN  std_logic;   --- clear number of people
+  s1_i   : IN  std_logic;   --- gates
   s2_i   : IN  std_logic;
   s3_i   : IN  std_logic;
-  txd_o  : OUT std_logic;
-  tled_o : OUT std_logic;
-  sec_o : OUT std_logic;
+  txd_o  : OUT std_logic;   --- uart output
+  tled_o : OUT std_logic;   --- LED
+  sec_o : OUT std_logic;    
   sdo_o  : OUT std_logic;
   sdv_o  : OUT std_logic;
   stx_o  : OUT std_logic;
