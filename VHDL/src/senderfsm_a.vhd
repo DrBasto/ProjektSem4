@@ -20,7 +20,7 @@ ARCHITECTURE ar1 OF sender_fsm IS
                             ELSE                                    nxt_st <= idle_st;
                             END IF;
             WHEN tstart_st => IF (br_i ='1') THEN nxt_st <= vec1_st;
-                            ELSE                  nxt_st <= maxreach_st;
+                            ELSE                  nxt_st <= tstart_st;
                             END IF;
             WHEN vec1_st => IF ((br_i ='1'))   THEN nxt_st <= vec2_st;
                             ELSE                    nxt_st <= vec1_st;
