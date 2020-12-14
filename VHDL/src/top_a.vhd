@@ -34,8 +34,8 @@ BEGIN
   cldv : clock_divider PORT MAP (rb_i,cp_i,br_s,sec_s);
   cou: cu1 PORT MAP (rb_i, cp_i, cl_i, cup_i,cdown_i, headcount_s, maxr_s); -- Counting Unit
   event_logger : evtlog PORT MAP (rb_i, cp_i, s1_i, s2_i, s3_i, maxr_s, cup_s, cdown_s, detect_s, red_s, grn_s, sound_s); 
-  uar : uart PORT MAP (rb_i, cp_i, br_s, detect_s, headcount_s, txd_s, tled_s); -- UART
-  int : interface PORT MAP (rb_i, cp_i, detect_s, event_s, headcount_s, sdo_s, sdv_s, stx_s); -- 3WireInterface
+  uar : uart PORT MAP (rb_i, cp_i, br_s, detect_s, headcount_s, event_s, txd_s, tled_s); -- UART
+  int : interface PORT MAP (rb_i, cp_i, br_i,  event_s, headcount_s, detect_s,  sdo_s, sdv_s, stx_s); -- 3WireInterface
 
   
   txd_o <= txd_s;     -- data transmission
