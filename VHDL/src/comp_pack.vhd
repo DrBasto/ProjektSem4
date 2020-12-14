@@ -16,77 +16,68 @@ PACKAGE comp_pack IS
 
 COMPONENT top IS
 PORT(
-  rb_i   : IN  std_logic;
-  cp_i   : IN  std_logic;
-  s1_i   : IN  std_logic;
+  cp_i   : IN  std_logic;   --- clock
+  rb_i   : IN  std_logic;   --- reset
+  cl_i   : IN  std_logic;   --- clear number of people
+  s1_i   : IN  std_logic;   --- gates
   s2_i   : IN  std_logic;
   s3_i   : IN  std_logic;
-  cl_i   : IN  std_logic;
-  rb_o   : OUT std_logic;
-  sec_o  : OUT std_logic;
-  grn_o  : OUT std_logic;
-  red_o  : OUT std_logic;
-  tled_o : OUT std_logic;
-  txd_o  : OUT std_logic;
-  sdi_o  : OUT std_logic;
+  txd_o  : OUT std_logic;   --- uart output
+  tled_o : OUT std_logic;   --- LED
+  sec_o : OUT std_logic;    
+  sdo_o  : OUT std_logic;
   sdv_o  : OUT std_logic;
-  stx_o  : OUT std_logic
+  stx_o  : OUT std_logic;
+  red_o  : OUT std_logic;
+  grn_o  : OUT std_logic;
+  sound_o  : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT rate IS
+COMPONENT clock_divider IS
 PORT(
-  rb_i : IN std_logic;
+    cp_i : IN std_logic;
+    rb_i : IN std_logic;
+    br_s : OUT std_logic;
+    sec_o : OUT std_logic
+    );
+END COMPONENT;
+
+-- --------------------------------------------------------------------
+
+COMPONENT cu1 IS
+PORT(
   cp_i : IN std_logic;
-  br_o : OUT std_logic;
-  hz_o : OUT std_logic
+  rb_i : IN std_logic;
+  cl_i : IN std_logic;
+  cup_i : IN std_logic;
+  cdown_i : IN std_logic;
+  headcount_o : OUT std_logic_vector(5 DOWNTO 0);
+  maxr_s : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT count IS
+COMPONENT event_logger IS
 PORT(
-  rb_i : IN std_logic;
-  cp_i : IN std_logic;
-  inc_i : IN std_logic;
-  dec_i : IN std_logic;
-  min_o : OUT std_logic;
-  max_o : OUT std_logic;
-  num_o : OUT std_logic_vector(7 DOWNTO 0)
-  );
-END COMPONENT;
-
--- --------------------------------------------------------------------
-
-COMPONENT control IS
-PORT(
-  rb_i : IN std_logic;
-  cp_i : IN std_logic;
-  enter_i : IN std_logic;
-  leave_i : IN std_logic;
-  min_i  : IN  std_logic;
-  max_i  : IN  std_logic;
-  inc_o : OUT std_logic;
-  dec_o : OUT std_logic;
-  evt_o : OUT std_logic_vector(7 DOWNTO 0);
-  sub_o : OUT std_logic
-  );
-END COMPONENT;
-
--- --------------------------------------------------------------------
-
-COMPONENT trigger IS
-PORT(
-  rb_i : IN std_logic;
-  cp_i : IN std_logic;
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
   s1_i : IN std_logic;
   s2_i : IN std_logic;
   s3_i : IN std_logic;
-  enter_o : OUT std_logic;
-  leave_o : OUT std_logic
+  done_s : IN std_logic; 
+  finish_s : IN std_logic;
+  maxr_s : IN std_logic;
+  cup_s  : OUT std_logic;
+  cdown_s  : OUT std_logic;
+  event_s  : OUT std_logic_vector(1 DOWNTO 0);
+  detect_s : OUT std_logic;
+  red_o : OUT std_logic;
+  grn_o : OUT std_logic;
+  sound_o : OUT std_logic
   );
 END COMPONENT;
 
@@ -94,12 +85,15 @@ END COMPONENT;
 
 COMPONENT uat is
 PORT(
-  rb_i : IN std_logic;
   cp_i : IN std_logic;
-  br_i : IN std_logic;  -- baud rate
-  dv_i : IN std_logic;  -- data valid
-  num_i : std_logic_vector(7 DOWNTO 0); -- data (number)
-  txd_o : OUT std_logic -- serial output
+  rb_i : IN std_logic;
+  detect_s : IN std_logic;
+  br_i : IN std_logic;
+  headcount_s :  IN std_logic_vector(5 DOWNTO 0);
+  event_s : IN std_logic_vector(1 DOWNTO 0);
+  txd_o : OUT std_logic;
+  tled_o : OUT std_logic;
+  done_s : OUT std_logic
   );
 END COMPONENT;
 
@@ -107,62 +101,63 @@ END COMPONENT;
 
 COMPONENT interface is
 PORT(
-  rb_i : IN std_logic;
-  cp_i : IN std_logic;
-  sub_i : IN std_logic;
-  evt_i : IN std_logic_vector(7 DOWNTO 0);
-  num_i : IN std_logic_vector(7 DOWNTO 0);
-  sdi_o : OUT std_logic;
-  sdv_o : OUT std_logic;
-  stx_o : OUT std_logic
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  br_i   : IN std_logic;
+  event_s : IN std_logic_vector(1 DOWNTO 0);
+  headcount_s : IN std_logic_vector(5 DOWNTO 0);
+  detect_s : IN std_logic; 
+  sdo_o  : OUT std_logic;
+  sdv_o  : OUT std_logic;
+  stx_o  : OUT std_logic;
+  finish_o : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 -- --------------------------------------------------------------------
 
--- BAUD RATE GENERATOR
+-- CLOCK_DIVIDEr
 -- --------------------------------------------------------------------
 
-COMPONENT c10ec IS
+COMPONENT c10en IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
-  en_i : IN STD_LOGIC;
-  co_o : OUT std_logic
+  enable_i : IN std_logic;
+  cout_o : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT c10xc IS
+COMPONENT c10 IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
-  co_o : OUT std_logic
+  cout_o : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT c12ec IS
+COMPONENT c12en IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
-  en_i : IN std_logic;
-  co_o : OUT std_logic
+  enable_i : IN std_logic;
+  cout_o : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT reg24e IS
+COMPONENT c5en IS
 PORT(
   rb_i : IN std_logic;
   cp_i : IN std_logic;
-  en_i : IN std_logic;
-  d_i  : IN std_logic_vector(7 DOWNTO 0);
-  q_o  : OUT std_logic_vector(7 DOWNTO 0)
+  enable_i : IN std_logic;
+  cout_o : OUT std_logic
   );
 END COMPONENT;
 
@@ -172,48 +167,66 @@ END COMPONENT;
 -- UART
 -- --------------------------------------------------------------------
 
-COMPONENT uat_fsm IS
-PORT (rb_i   :  IN std_logic;                     -- Reset, active low
-      cp_i   :  IN std_logic;                     -- Syscp, @ 12MHz
-      dv_i   :  IN std_logic;                     -- Have new RTC or GPS-Data
-      br_i   :  IN std_logic;                     -- Baud-Rate to ena Counter
-     dne_i   :  IN std_logic;                     -- Last Bit transmitted
-     sto_o   : OUT std_logic;                     -- enable register load
-     clr_o   : OUT std_logic;                     -- clear Bit-Counters
-     nxt_o   : OUT std_logic                      -- next Bit, inc count
+COMPONENT control_fsm IS
+PORT (
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  detect_s : IN std_logic;
+  done_s : IN std_logic;
+  start_s : OUT std_logic
      );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT reg8 IS
+COMPONENT transmit_fsm IS
 PORT(
-  rb_i : IN std_logic;
-  cp_i : IN std_logic;
-  en_i : IN std_logic;
-  d_i  : IN std_logic_vector(7 DOWNTO 0);
-  q_o  : OUT std_logic_vector(7 DOWNTO 0)
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  br_i : IN std_logic;
+  start_s : IN std_logic;
+  event_s : IN std_logic_vector(1 DOWNTO 0);
+  headcount_s : IN std_logic_vector(5 DOWNTO 0);
+  txd_o : OUT std_logic;
+  tled_o : OUT std_logic;
+  done_s : OUT std_logic
   );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
+---- EVENT LOGGER ---------------------
 
-COMPONENT c11bin IS
-PORT (rb_i   :  IN STD_LOGIC;                     -- Reset, active low
-      cp_i   :  IN STD_LOGIC;                     -- Syscp, @ 12MHz
-      en_i   :  IN STD_LOGIC;                     -- Enable Count
-      cl_i   :  IN STD_LOGIC;                     -- Clear Counter
-      co_o   : OUT STD_LOGIC;                     -- Carry Out
-       q_o   : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)   -- Counter Value
+COMPONENT logger_fsm IS
+PORT (   
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  s1_i   : IN  std_logic;
+  s2_i   : IN  std_logic;
+  s3_i   : IN  std_logic;
+  done_s : IN std_logic;
+  finish_s : IN std_logic;
+  cup_s  : OUT std_logic;
+  cdown_s: OUT std_logic;
+  enter_s: OUT std_logic;
+  exit_s : OUT std_logic
       );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT mx2tdo IS
-PORT (s_i  :  IN STD_LOGIC_VECTOR(  3 DOWNTO 0);  -- get bits
-      d_i  :  IN STD_LOGIC_VECTOR(  7 DOWNTO 0);  -- BYTE
-    txd_o  : OUT STD_LOGIC);                      -- txd, Serial Output
+COMPONENT keeper_fsm IS
+PORT (
+  enter_s : IN std_logic;
+  exit_s : IN std_logic;
+  maxr_s : IN std_logic;
+  done_s : IN std_logic;
+  finish_s : IN std_logic;
+  detect_s : OUT std_logic;
+  event_s : OUT std_logic_vector(1 DOWNTO 0);
+  red_o : OUT std_logic;
+  grn_o : OUT std_logic;
+  sound_o : OUT std_logic
+    );                      -- txd, Serial Output
 END COMPONENT;
 
 -- --------------------------------------------------------------------
@@ -222,38 +235,31 @@ END COMPONENT;
 -- INTERFACE TO S3
 -- --------------------------------------------------------------------
 
-COMPONENT interface_fsm IS
+COMPONENT operator_fsm IS
 PORT (
-  rb_i : IN std_logic;                     -- Reset, active low
-  cp_i : IN std_logic;                     -- Syscp, @ 12MHz
-  dv_i : IN std_logic;                     -- Have new RTC or GPS-Data
-  dne_i : IN std_logic;                     -- Last Bit transmitted
-  ldr_o : OUT std_logic;                     -- enable register load
-  act_o : OUT std_logic;
-  vld_o: OUT std_logic;
-  clr_o : OUT std_logic;                     -- clear Bit-Counters
-  nxt_o : OUT std_logic                      -- next Bit, inc count
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  detect_s : IN std_logic;
+  finish_s : IN std_logic;
+  send_s : OUT std_logic
       );
 END COMPONENT;
 
 -- --------------------------------------------------------------------
 
-COMPONENT c16bin IS
-PORT (rb_i   :  IN STD_LOGIC;                     -- Reset, active low
-      cp_i   :  IN STD_LOGIC;                     -- Syscp, @ 12MHz
-      en_i   :  IN STD_LOGIC;                     -- Enable Count
-      cl_i   :  IN STD_LOGIC;                     -- Clear Counter
-      co_o   : OUT STD_LOGIC;                     -- Carry Out
-       q_o   : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)   -- Counter Value
+COMPONENT sender_fsm IS
+PORT ( 
+  cp_i   : IN  std_logic;
+  rb_i   : IN  std_logic;
+  br_i : IN std_logic;
+  send_s  : IN std_logic;
+  event_s : IN std_logic_vector(1 DOWNTO 0);
+  headcount_s : IN std_logic_vector(5 DOWNTO 0);
+  sdo_o  : OUT std_logic;
+  sdv_o  : OUT std_logic;
+  stx_o  : OUT std_logic;
+  finish_s : OUT std_logic
       );
-END COMPONENT;
-
--- --------------------------------------------------------------------
-
-COMPONENT mx2snd IS
-PORT (s_i  :  IN STD_LOGIC_VECTOR( 4 DOWNTO 0);  -- get bits
-      d_i  :  IN STD_LOGIC_VECTOR(15 DOWNTO 0);  -- BYTE
-    txd_o  : OUT STD_LOGIC);                      -- txd, Serial Output
 END COMPONENT;
 
 -- --------------------------------------------------------------------

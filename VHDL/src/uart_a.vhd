@@ -7,8 +7,8 @@ ARCHITECTURE ar1 OF uat is
 
 BEGIN
 
-  ufsm1: uat_fsm PORT MAP (cp_i,rb_i,detect_s,done_s,start_s);
-  ufsm2: uat_fsm PORT MAP (cp_i,rb_i,br_i,start_s, event_s,headcount_s,txd_s,tled_s,done_s);
+  ufsm1: control_fsm PORT MAP (cp_i,rb_i,detect_s,done_s,start_s);
+  ufsm2: transmit_fsm PORT MAP (cp_i,rb_i,br_i,start_s, event_s,headcount_s,txd_s,tled_s,done_s);
 
   txd_o <= txd_s;
   tled_o <= tled_s;
