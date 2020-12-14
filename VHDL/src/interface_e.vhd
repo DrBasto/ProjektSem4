@@ -17,6 +17,6 @@ PORT(
   sdo_o  : OUT std_logic;
   sdv_o  : OUT std_logic;
   stx_o  : OUT std_logic;
-  finish_s : OUT std_logic
+  finish_o : OUT std_logic
   );
 END interface;
