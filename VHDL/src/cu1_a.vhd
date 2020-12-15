@@ -14,7 +14,7 @@ BEGIN
 	  END IF;
   END PROCESS ru_n;
 
-  maxr_s <= '1' WHEN headcount_s="111111" ELSE '0'; -- for the meantime this is the max
+  maxr_s <= '1' WHEN headcount_s="000101" ELSE '0'; -- for the meantime this is the max
   headcount_o <= std_logic_vector(headcount_s);
 
 END ar1;

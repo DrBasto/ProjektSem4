@@ -266,6 +266,6 @@ PACKAGE comp_pack IS
 
 -- --------------------------------------------------------------------
 
-CONSTANT room_limit : integer := 5;
+CONSTANT room_limit : integer := 6; --- use in tb
 
 END comp_pack;
