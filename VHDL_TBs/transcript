@@ -55,3 +55,6 @@ add wave -position insertpoint sim:/tb1_top/*
 run
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /tb1_top/counting_unit
+run
+# End time: 03:07:18 on Dec 15,2020, Elapsed time: 0:03:10
+# Errors: 0, Warnings: 2
