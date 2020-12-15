@@ -4,6 +4,7 @@ ARCHITECTURE ar1 OF uat is
   SIGNAL start_s : std_logic;
   SIGNAL txd_s : std_logic;
   SIGNAL tled_s: std_logic;
+  SIGNAL done_s: std_logic;
 
 BEGIN
 
@@ -12,5 +13,6 @@ BEGIN
 
   txd_o <= txd_s;
   tled_o <= tled_s;
+  done_o <= done_s;
 
 END ar1;
