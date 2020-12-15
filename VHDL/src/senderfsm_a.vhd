@@ -56,17 +56,17 @@ ARCHITECTURE ar1 OF sender_fsm IS
       ausgabe: PROCESS (now_st,event_s,headcount_s)
       BEGIN
         CASE now_st IS
-         WHEN idle_st  =>     sdo_o <= '1';            sdv_o <= '0' ; stx_o <= '0' ; finish_s <= '0'
-         WHEN tstart_st  =>   sdo_o <= '0';            sdv_o <= '0' ; stx_o <= '0' ; finish_s <= '0'
-         WHEN vec1_st  =>     sdo_o <= event_s(0);     sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec2_st  =>     sdo_o <= event_s(1);     sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec3_st  =>     sdo_o <= headcount_s(0); sdv_o <= '1' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec4_st  =>     sdo_o <= headcount_s(1); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec5_st  =>     sdo_o <= headcount_s(2); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec6_st  =>     sdo_o <= headcount_s(3); sdv_o <= '1' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec7_st  =>     sdo_o <= headcount_s(4); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN vec8_st  =>     sdo_o <= headcount_s(5); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0'
-         WHEN tstop_st =>     sdo_o <= '1';            sdv_o <= '1' ; stx_o <= '0' ; finish_s <= '1'
+         WHEN idle_st  =>     sdo_o <= '1';            sdv_o <= '0' ; stx_o <= '0' ; finish_s <= '0';
+         WHEN tstart_st  =>   sdo_o <= '0';            sdv_o <= '0' ; stx_o <= '0' ; finish_s <= '0';
+         WHEN vec1_st  =>     sdo_o <= event_s(0);     sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec2_st  =>     sdo_o <= event_s(1);     sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec3_st  =>     sdo_o <= headcount_s(0); sdv_o <= '1' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec4_st  =>     sdo_o <= headcount_s(1); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec5_st  =>     sdo_o <= headcount_s(2); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec6_st  =>     sdo_o <= headcount_s(3); sdv_o <= '1' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec7_st  =>     sdo_o <= headcount_s(4); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN vec8_st  =>     sdo_o <= headcount_s(5); sdv_o <= '0' ; stx_o <= '1' ; finish_s <= '0';
+         WHEN tstop_st =>     sdo_o <= '1';            sdv_o <= '1' ; stx_o <= '0' ; finish_s <= '1';
         END CASE;
       END PROCESS ausgabe;
     

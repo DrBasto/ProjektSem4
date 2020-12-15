@@ -2,7 +2,7 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.all;
 USE IEEE.NUMERIC_STD.all;
-
+-- USE WORK.comp_pack.all;
 -- ----------------------------------------------------------------------------
 
 ENTITY uat is

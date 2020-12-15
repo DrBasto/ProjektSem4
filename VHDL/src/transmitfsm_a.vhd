@@ -56,17 +56,17 @@ ARCHITECTURE ar1 OF transmit_fsm IS
       ausgabe: PROCESS (now_st,event_s,headcount_s)
       BEGIN
         CASE now_st IS
-         WHEN idle_st  =>     txd_s <= '1';            tled_o <= '0' ; done_s <= '0' ;
-         WHEN tstart_st  =>   txd_s <= '0';            tled_o <= '0' ; done_s <= '0' ;
-         WHEN vec1_st  =>     txd_s <= event_s(0);     tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec2_st  =>     txd_s <= event_s(1);     tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec3_st  =>     txd_s <= headcount_s(0); tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec4_st  =>     txd_s <= headcount_s(1); tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec5_st  =>     txd_s <= headcount_s(2); tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec6_st  =>     txd_s <= headcount_s(3); tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec7_st  =>     txd_s <= headcount_s(4); tled_o <= '1' ; done_s <= '0' ;
-         WHEN vec8_st  =>     txd_s <= headcount_s(5); tled_o <= '1' ; done_s <= '0' ;
-         WHEN tstop_st =>     txd_s <= '1';            tled_o <= '0' ; done_s <= '1' ;
+         WHEN idle_st  =>     txd_s <= '1';            tled_s <= '0' ; done_s <= '0' ;
+         WHEN tstart_st  =>   txd_s <= '0';            tled_s <= '0' ; done_s <= '0' ;
+         WHEN vec1_st  =>     txd_s <= event_s(0);     tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec2_st  =>     txd_s <= event_s(1);     tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec3_st  =>     txd_s <= headcount_s(0); tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec4_st  =>     txd_s <= headcount_s(1); tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec5_st  =>     txd_s <= headcount_s(2); tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec6_st  =>     txd_s <= headcount_s(3); tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec7_st  =>     txd_s <= headcount_s(4); tled_s <= '1' ; done_s <= '0' ;
+         WHEN vec8_st  =>     txd_s <= headcount_s(5); tled_s <= '1' ; done_s <= '0' ;
+         WHEN tstop_st =>     txd_s <= '1';            tled_s <= '0' ; done_s <= '1' ;
         END CASE;
       END PROCESS ausgabe;
     

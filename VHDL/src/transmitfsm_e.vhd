@@ -14,8 +14,8 @@ PORT(
   start_s : IN std_logic;
   event_s : IN std_logic_vector(1 DOWNTO 0);
   headcount_s : IN std_logic_vector(5 DOWNTO 0);
-  txd_o : OUT std_logic;
-  tled_o : OUT std_logic;
+  txd_s : OUT std_logic;
+  tled_s : OUT std_logic;
   done_s : OUT std_logic
   );
 END transmit_fsm;

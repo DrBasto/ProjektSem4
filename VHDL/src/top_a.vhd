@@ -52,6 +52,6 @@ BEGIN
   red_o <= red_s;     -- red LED
   grn_o <= grn_s; -- green LED  
   sound_o <= sound_s; 
-  rb_o <= rb_i;       -- reset indication
+  -- rb_o <= rb_i;       -- reset indication
 
 END ar1;
