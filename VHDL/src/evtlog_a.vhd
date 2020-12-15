@@ -1,4 +1,4 @@
-ARCHITECTURE ar1 OF top IS
+ARCHITECTURE ar1 OF event_logger IS
 
   SIGNAL enter_s : std_logic;
   SIGNAL exit_s : std_logic;

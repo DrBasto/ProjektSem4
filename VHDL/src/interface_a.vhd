@@ -1,7 +1,6 @@
-ARCHITECTURE ar1 OF top IS
+ARCHITECTURE ar1 OF interface IS
 
   SIGNAL send_s : std_logic;
-  SIGNAL finish_s : std_logic;
 
 
 BEGIN

@@ -668,3 +668,397 @@ dataset reload -f
 # Compile of top_a.vhd was successful.
 # Compile of uart_a.vhd failed with 2 errors.
 # 34 compiles, 3 failed with 15 errors.
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+# Errors: 0, Warnings: 0
+# Compile of TB-top.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c5en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c5en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c12en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c12en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of clkdv_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of clkdv_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of comp_pack.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of controlfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of controlfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of cu1_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of cu1_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of evtlog_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of interface_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of keeperfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of keeperfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of loggerfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of loggerfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of operatorfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of operatorfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of senderfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of senderfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of top_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of transmitfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of transmitfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of uart_e.vhd was successful.
+# Errors: 9, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of top_a.vhd was successful.
+# Errors: 2, Warnings: 0
+# Errors: 9, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 2, Warnings: 0
+# Errors: 9, Warnings: 0
+# Compile of evtlog_a.vhd failed.
+# Errors: 4, Warnings: 0
+# Compile of interface_a.vhd failed.
+# Errors: 2, Warnings: 0
+# Compile of uart_a.vhd failed.
+dataset reload -f
+# Dataset not found: 
+# Compile of TB-top.vhd was successful.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 9 errors.
+# Compile of interface_a.vhd failed with 4 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# 32 compiles, 3 failed with 15 errors.
+# Errors: 0, Warnings: 0
+# Compile of TB-top.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c5en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c5en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c10en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c12en_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of c12en_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of clkdv_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of clkdv_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of comp_pack.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of controlfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of controlfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of cu1_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of cu1_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of evtlog_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of interface_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of keeperfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of keeperfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of loggerfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of loggerfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of operatorfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of operatorfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of senderfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of senderfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of transmitfsm_a.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of transmitfsm_e.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of uart_e.vhd was successful.
+# Errors: 9, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 2, Warnings: 0
+# Errors: 9, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 2, Warnings: 0
+# Errors: 9, Warnings: 0
+# Compile of evtlog_a.vhd failed.
+# Errors: 4, Warnings: 0
+# Compile of interface_a.vhd failed.
+# Errors: 2, Warnings: 0
+# Compile of uart_a.vhd failed.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 9 errors.
+# Compile of interface_a.vhd failed with 4 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 15 errors.
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+# Compile of evtlog_a.vhd failed with 9 errors.
+dataset reload -f
+# Dataset not found: 
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 9 errors.
+# Compile of interface_a.vhd failed with 4 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 15 errors.
+dataset reload -f
+# Dataset not found: 
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 3 errors.
+# Compile of interface_a.vhd failed with 3 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 8 errors.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 2 errors.
+# Compile of interface_a.vhd failed with 3 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 7 errors.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 2 errors.
+# Compile of interface_a.vhd failed with 2 errors.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 6 errors.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of evtlog_a.vhd failed with 2 errors.
+# Compile of interface_e.vhd was successful.
+# Compile of interface_a.vhd failed with 2 errors.
+# Compile of uart_e.vhd was successful.
+# Compile of uart_a.vhd failed with 2 errors.
+# Compile of comp_pack.vhd was successful.
+# Compile of TB-top.vhd was successful.
+# 32 compiles, 3 failed with 6 errors.
