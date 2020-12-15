@@ -1,5 +1,5 @@
 Analysis & Synthesis report for IC_S4
-Wed Dec 02 14:28:19 2020
+Tue Dec 15 02:57:16 2020
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Dec 02 14:28:19 2020           ;
+; Analysis & Synthesis Status        ; Failed - Tue Dec 15 02:57:16 2020           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; IC_S4                                       ;
 ; Top-level Entity Name              ; IC_S4                                       ;
@@ -164,22 +164,20 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 02 14:28:10 2020
+    Info: Processing started: Tue Dec 15 02:57:08 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IC_S4 -c IC_S4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vhdl/src/top_e.vhd
     Info (12023): Found entity 1: top File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd Line: 17
-Error (10500): VHDL syntax error at top_a.vhd(27) near text ":";  expecting "end", or "(", or an identifier, or a concurrent statement File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 27
-Error (10500): VHDL syntax error at top_a.vhd(27) near text ";";  expecting "<=" File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 27
-Error (10500): VHDL syntax error at top_a.vhd(28) near text ";";  expecting "<=" File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 28
-Error (10500): VHDL syntax error at top_a.vhd(29) near text ";";  expecting "<=" File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 29
-Error (10500): VHDL syntax error at top_a.vhd(30) near text ",";  expecting "(", or an identifier, or  unary operator File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 30
-Info (12021): Found 0 design units, including 0 entities, in source file vhdl/src/top_a.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
-    Error: Peak virtual memory: 4764 megabytes
-    Error: Processing ended: Wed Dec 02 14:28:19 2020
-    Error: Elapsed time: 00:00:09
+Info (12021): Found 1 design units, including 0 entities, in source file vhdl/src/top_a.vhd
+    Info (12022): Found design unit 1: top-ar1 File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd Line: 8
+Error (10481): VHDL Use Clause error at top_e.vhd(13): design library "work" does not contain primary unit "comp_pack". Verify that the primary unit exists in the library and has been successfully compiled. File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd Line: 13
+Error (10800): VHDL error at top_e.vhd(13): selected name in use clause is not an expanded name File: C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd Line: 13
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4775 megabytes
+    Error: Processing ended: Tue Dec 15 02:57:16 2020
+    Error: Elapsed time: 00:00:08
     Error: Total CPU time (on all processors): 00:00:19
 
 

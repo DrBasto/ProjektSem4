@@ -93,7 +93,7 @@ PACKAGE comp_pack IS
     event_s : IN std_logic_vector(1 DOWNTO 0);
     txd_o : OUT std_logic;
     tled_o : OUT std_logic;
-    done_s : OUT std_logic
+    done_o : OUT std_logic
     );
   END COMPONENT;
 
@@ -110,7 +110,7 @@ PACKAGE comp_pack IS
     sdo_o  : OUT std_logic;
     sdv_o  : OUT std_logic;
     stx_o  : OUT std_logic;
-    finish_s : OUT std_logic
+    finish_o : OUT std_logic
     );
   END COMPONENT;
 

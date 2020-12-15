@@ -1,5 +1,5 @@
 Flow report for IC_S4
-Wed Dec 02 14:28:19 2020
+Tue Dec 15 02:57:16 2020
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Wed Dec 02 14:28:19 2020      ;
+; Flow Status                        ; Flow Failed - Tue Dec 15 02:57:16 2020      ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; IC_S4                                       ;
 ; Top-level Entity Name              ; IC_S4                                       ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2020 14:28:11 ;
+; Start date & time ; 12/15/2020 02:57:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; IC_S4               ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1098383917936.160691569107796          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1098383917936.160799742802024          ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -91,8 +91,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4764 MB             ; 00:00:19                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4775 MB             ; 00:00:19                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
