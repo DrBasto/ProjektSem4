@@ -216,6 +216,8 @@ PACKAGE comp_pack IS
 
   COMPONENT keeper_fsm IS
   PORT (
+    cp_i   : IN  std_logic;
+    rb_i   : IN  std_logic;
     enter_s : IN std_logic;
     exit_s : IN std_logic;
     maxr_s : IN std_logic;
@@ -263,5 +265,7 @@ PACKAGE comp_pack IS
   END COMPONENT;
 
 -- --------------------------------------------------------------------
+
+CONSTANT room_limit : integer := 5;
 
 END comp_pack;
