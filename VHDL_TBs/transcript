@@ -1,60 +1,33 @@
-vsim -gui work.tb1_top
-# vsim -gui work.tb1_top 
-# Start time: 03:00:17 on Dec 15,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.comp_pack
-# Loading work.tb1_top(ar1)
-# Loading work.cu1(ar1)
-# Loading work.event_logger(ar1)
-# Loading work.logger_fsm(ar1)
-# Loading work.keeper_fsm(ar1)
-# Loading work.uat(ar1)
-# Loading work.control_fsm(ar1)
-# Loading work.transmit_fsm(ar1)
-# Loading work.interface(ar1)
-# Loading work.operator_fsm(ar1)
-# Loading work.sender_fsm(ar1)
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb1_top/counting_unit
-run
-run
-run
-run
-run -continue
-run -all
-add wave -position insertpoint sim:/tb1_top/*
-run
-run
-run
-vsim -gui work.tb1_top
-# End time: 03:04:08 on Dec 15,2020, Elapsed time: 0:03:51
-# Errors: 0, Warnings: 2
-# vsim -gui work.tb1_top 
-# Start time: 03:04:08 on Dec 15,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.comp_pack
-# Loading work.tb1_top(ar1)
-# Loading work.cu1(ar1)
-# Loading work.event_logger(ar1)
-# Loading work.logger_fsm(ar1)
-# Loading work.keeper_fsm(ar1)
-# Loading work.uat(ar1)
-# Loading work.control_fsm(ar1)
-# Loading work.transmit_fsm(ar1)
-# Loading work.interface(ar1)
-# Loading work.operator_fsm(ar1)
-# Loading work.sender_fsm(ar1)
-add wave -position insertpoint sim:/tb1_top/*
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb1_top/counting_unit
-run
-# End time: 03:07:18 on Dec 15,2020, Elapsed time: 0:03:10
-# Errors: 0, Warnings: 2
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of evtlog_a.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of interface_a.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of uart_a.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of TB-top.vhd failed with 3 errors.
+# 32 compiles, 1 failed with 3 errors.
