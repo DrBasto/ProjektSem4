@@ -12,41 +12,41 @@ ARCHITECTURE ar1 OF sender_fsm IS
         END IF;
       END PROCESS clkd;
     
-      st_trans: PROCESS (now_st, br_i, send_s)
+      st_trans: PROCESS (now_st, br_s, send_s)
       BEGIN
         nxt_st <= idle_st;
         CASE now_st IS
-            WHEN idle_st => IF   (br_i ='1' AND send_s = '1') THEN nxt_st <= tstart_st;
+            WHEN idle_st => IF   (br_s ='1' AND send_s = '1') THEN nxt_st <= tstart_st;
                             ELSE                                    nxt_st <= idle_st;
                             END IF;
-            WHEN tstart_st => IF (br_i ='1') THEN nxt_st <= vec1_st;
+            WHEN tstart_st => IF (br_s ='1') THEN nxt_st <= vec1_st;
                             ELSE                  nxt_st <= tstart_st;
                             END IF;
-            WHEN vec1_st => IF ((br_i ='1'))   THEN nxt_st <= vec2_st;
+            WHEN vec1_st => IF ((br_s ='1'))   THEN nxt_st <= vec2_st;
                             ELSE                    nxt_st <= vec1_st;
                             END IF;
-            WHEN vec2_st => IF ((br_i ='1'))   THEN nxt_st <= vec3_st;
+            WHEN vec2_st => IF ((br_s ='1'))   THEN nxt_st <= vec3_st;
                             ELSE                    nxt_st <= vec2_st;
                             END IF;
-            WHEN vec3_st => IF ((br_i ='1'))   THEN nxt_st <= vec4_st;
+            WHEN vec3_st => IF ((br_s ='1'))   THEN nxt_st <= vec4_st;
                             ELSE                    nxt_st <= vec3_st;
                             END IF;
-            WHEN vec4_st => IF ((br_i ='1'))   THEN nxt_st <= vec5_st;
+            WHEN vec4_st => IF ((br_s ='1'))   THEN nxt_st <= vec5_st;
                             ELSE                    nxt_st <= vec4_st;
                             END IF;
-            WHEN vec5_st => IF ((br_i ='1'))   THEN nxt_st <= vec6_st;
+            WHEN vec5_st => IF ((br_s ='1'))   THEN nxt_st <= vec6_st;
                             ELSE                    nxt_st <= vec5_st;
                             END IF;
-            WHEN vec6_st => IF ((br_i ='1'))   THEN nxt_st <= vec7_st;
+            WHEN vec6_st => IF ((br_s ='1'))   THEN nxt_st <= vec7_st;
                             ELSE                    nxt_st <= vec6_st;
                             END IF;
-            WHEN vec7_st => IF ((br_i ='1'))   THEN nxt_st <= vec8_st;
+            WHEN vec7_st => IF ((br_s ='1'))   THEN nxt_st <= vec8_st;
                             ELSE                    nxt_st <= vec7_st;
                             END IF;
-            WHEN vec8_st => IF ((br_i ='1'))   THEN nxt_st <= tstop_st;
+            WHEN vec8_st => IF ((br_s ='1'))   THEN nxt_st <= tstop_st;
                             ELSE                    nxt_st <= vec8_st;
                             END IF;
-            WHEN tstop_st => IF ((br_i ='1'))   THEN nxt_st <= idle_st;
+            WHEN tstop_st => IF ((br_s ='1'))   THEN nxt_st <= idle_st;
                             ELSE                     nxt_st <= tstop_st;
                             END IF;
          
