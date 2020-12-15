@@ -10,7 +10,7 @@ PORT(
 cp_i : IN std_logic;
 rb_i : IN std_logic;
 detect_s : IN std_logic;
-br_i : IN std_logic;
+br_s : IN std_logic;
 headcount_s :  IN std_logic_vector(5 DOWNTO 0);
 event_s : IN std_logic_vector(1 DOWNTO 0);
 txd_o : OUT std_logic;

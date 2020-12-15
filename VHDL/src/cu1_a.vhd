@@ -4,13 +4,13 @@ ARCHITECTURE ar1 OF cu1 IS
 
 BEGIN
   
-  ru_n: PROCESS (cp_i, rb_i, cl_i, cup_i, cdown_i)
+  ru_n: PROCESS (cp_i, rb_i, cl_i, cup_s, cdown_s)
   BEGIN
     IF rising_edge(cl_i) THEN 
         IF (rb_i = '0') THEN headcount_s <= "000000";
         ELSIF (cp_i'EVENT AND cp_i = '1') THEN
-            IF (cup_i = '1') AND (cdown_i = '0') THEN headcount_s <= headcount_s + 1;
-            ELSIF (cdown_i = '1') AND (cup_i = '0') THEN headcount_s <= headcount_s - 1;
+            IF (cup_s = '1') AND (cdown_s = '0') THEN headcount_s <= headcount_s + 1;
+            ELSIF (cdown_s = '1') AND (cup_s = '0') THEN headcount_s <= headcount_s - 1;
             END IF;
         END IF;
     END IF;

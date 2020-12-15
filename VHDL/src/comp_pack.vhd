@@ -52,8 +52,8 @@ PORT(
   cp_i : IN std_logic;
   rb_i : IN std_logic;
   cl_i : IN std_logic;
-  cup_i : IN std_logic;
-  cdown_i : IN std_logic;
+  cup_s : IN std_logic;
+  cdown_s : IN std_logic;
   headcount_o : OUT std_logic_vector(5 DOWNTO 0);
   maxr_s : OUT std_logic
   );
@@ -88,7 +88,7 @@ PORT(
   cp_i : IN std_logic;
   rb_i : IN std_logic;
   detect_s : IN std_logic;
-  br_i : IN std_logic;
+  br_s : IN std_logic;
   headcount_s :  IN std_logic_vector(5 DOWNTO 0);
   event_s : IN std_logic_vector(1 DOWNTO 0);
   txd_o : OUT std_logic;
@@ -103,14 +103,14 @@ COMPONENT interface is
 PORT(
   cp_i   : IN  std_logic;
   rb_i   : IN  std_logic;
-  br_i   : IN std_logic;
+  br_s   : IN std_logic;
   event_s : IN std_logic_vector(1 DOWNTO 0);
   headcount_s : IN std_logic_vector(5 DOWNTO 0);
   detect_s : IN std_logic; 
   sdo_o  : OUT std_logic;
   sdv_o  : OUT std_logic;
   stx_o  : OUT std_logic;
-  finish_o : OUT std_logic
+  finish_s : OUT std_logic
   );
 END COMPONENT;
 
@@ -183,7 +183,7 @@ COMPONENT transmit_fsm IS
 PORT(
   cp_i   : IN  std_logic;
   rb_i   : IN  std_logic;
-  br_i : IN std_logic;
+  br_s : IN std_logic;
   start_s : IN std_logic;
   event_s : IN std_logic_vector(1 DOWNTO 0);
   headcount_s : IN std_logic_vector(5 DOWNTO 0);
@@ -251,7 +251,7 @@ COMPONENT sender_fsm IS
 PORT ( 
   cp_i   : IN  std_logic;
   rb_i   : IN  std_logic;
-  br_i : IN std_logic;
+  br_s : IN std_logic;
   send_s  : IN std_logic;
   event_s : IN std_logic_vector(1 DOWNTO 0);
   headcount_s : IN std_logic_vector(5 DOWNTO 0);
