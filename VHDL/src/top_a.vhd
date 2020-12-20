@@ -7,6 +7,26 @@
 -- Last edited: 2020-11-13
 ARCHITECTURE ar1 OF top IS
 
+  ATTRIBUTE chip_pin : string;
+  ATTRIBUTE chip_pin of rb_i : SIGNAL IS "E6"; -- S2_USR_BTN_akt_low
+  ATTRIBUTE chip_pin of cp_i : SIGNAL IS "H6"; -- CLK_12MHz
+
+  ATTRIBUTE chip_pin of cl_i : SIGNAL IS "H8"; -- Digital in (0)
+  ATTRIBUTE chip_pin of s1_i : SIGNAL IS "K10"; -- Digital in (1)
+  ATTRIBUTE chip_pin of s2_i : SIGNAL IS "H5"; -- Digital in (2)
+  ATTRIBUTE chip_pin of s3_i : SIGNAL IS "H4"; -- Digital in (3)
+
+  ATTRIBUTE chip_pin of rb_o : SIGNAL IS "A8"; -- Digital out (4)
+  ATTRIBUTE chip_pin of sound_o : SIGNAL IS "A9"; -- Digital out (4)
+  ATTRIBUTE chip_pin of sec_o : SIGNAL IS "D8"; -- Digital out (5)
+  ATTRIBUTE chip_pin of grn_o : SIGNAL IS "L12"; -- Digital out
+  ATTRIBUTE chip_pin of red_o : SIGNAL IS "J12"; -- Digital out
+  ATTRIBUTE chip_pin of tled_o : SIGNAL IS "A11"; -- Digital out
+  ATTRIBUTE chip_pin of txd_o : SIGNAL IS "K11"; -- Digital out
+  ATTRIBUTE chip_pin of sdo_o : SIGNAL IS "K12"; -- Digital out
+  ATTRIBUTE chip_pin of sdv_o : SIGNAL IS "J10"; -- Digital out
+  ATTRIBUTE chip_pin of stx_o : SIGNAL IS "H10"; -- Digital out
+
   SIGNAL br_s : std_logic;
   SIGNAL sec_s : std_logic;
 
@@ -52,6 +72,6 @@ BEGIN
   red_o <= red_s;     -- red LED
   grn_o <= grn_s; -- green LED  
   sound_o <= sound_s; 
-  -- rb_o <= rb_i;       -- reset indication
+  rb_o <= rb_i;       -- reset indication
 
 END ar1;

@@ -7,12 +7,12 @@ LIBRARY IEEE;
 
 -- ----------------------------------------------------------------------------
 
-ENTITY TB1_top IS 
-END TB1_top;
+ENTITY TB2_top IS 
+END TB2_top;
 
 -- ----------------------------------------------------------------------------
 
-ARCHITECTURE ar1 OF TB1_top IS
+ARCHITECTURE ar1 OF TB2_top IS
 
   --constant
   CONSTANT cy_2_t : time := 83.3333333333333333333333 ns;

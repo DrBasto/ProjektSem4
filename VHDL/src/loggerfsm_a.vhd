@@ -29,9 +29,8 @@ ARCHITECTURE ar1 OF logger_fsm IS
                             ELSIF (s1_i = '1')    THEN nxt_st <= s1passlr_st;
                             ELSE                       nxt_st <= s2passlr_st;
                             END IF;
-            WHEN entry_st => IF    (done_s = '1' AND finish_s = '1')  THEN nxt_st <= idle_st;
-                            ELSE                                           nxt_st <= entry_st;
-                            END IF;
+            WHEN entry_st => nxt_st <= idle_st;
+                            
 ------------------------------------------------ exit -------------------------------------------------------------
             WHEN s3passrl_st => IF (s2_i = '1') THEN nxt_st <= s2passrl_st;
                             ELSIF (s1_i = '1')  THEN nxt_st <= s1passlr_st;
@@ -41,9 +40,7 @@ ARCHITECTURE ar1 OF logger_fsm IS
                             ELSIF (s3_i = '1')    THEN nxt_st <= s3passrl_st;
                             ELSE                       nxt_st <= s2passrl_st;
                             END IF;
-            WHEN exit_st => IF    (done_s = '1' AND finish_s = '1')  THEN nxt_st <= idle_st;
-                            ELSE                                          nxt_st <= exit_st;
-                            END IF;
+            WHEN exit_st => nxt_st <= idle_st;
          
       END CASE;
       END PROCESS st_trans;
