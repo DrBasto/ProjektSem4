@@ -15,7 +15,7 @@ END TB2_top;
 ARCHITECTURE ar1 OF TB2_top IS
 
   --constant
-  CONSTANT cy_2_t : time := 83.3333333333333333333333 ns;
+  CONSTANT cf_in_t : time := 83.3333333333333333333333 ns;
   -- input
   SIGNAL cp_s : std_logic := '0'; 
   SIGNAL rb_s,cl_s,s1_s,s2_s,s3_s: std_logic;
@@ -54,7 +54,7 @@ BEGIN
 
   takt : PROCESS(cp_s)
   BEGIN
-    cp_s <= NOT cp_s AFTER cy_2_t; --12MHz
+    cp_s <= NOT cp_s AFTER cf_in_t; --12MHz
   END PROCESS;
 
   -------------------------------------------------------------------------------
@@ -78,67 +78,67 @@ BEGIN
   s2_s <='0';
   s3_s <='0';
   cl_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
 
       rb_s  <= '1';
-      WAIT FOR 100000*cy_2_t;
+      WAIT FOR 100000*cf_in_t;
   -------------------------------------------------------------------------------
   -- let some people enter
   -------------------------------------------------------------------------------
   enter: FOR i IN 0 to (max_people-1) LOOP
   s1_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s1_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s2_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s3_s <='0';
   ASSERT (false) REPORT "Someone entered."   SEVERITY note;
-  WAIT FOR 100000*cy_2_t;
+  WAIT FOR 100000*cf_in_t;
       ------------------------------------------------------------------------
   END LOOP;
 
   s1_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s1_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s2_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s3_s <='0';
   ASSERT (false) REPORT "Someone entered. - The room is full."   SEVERITY note;
-  WAIT FOR 100000*cy_2_t;
+  WAIT FOR 100000*cf_in_t;
 
   -------------------------------------------------------------------------------
   -- let some people leave
   -------------------------------------------------------------------------------
   leave: FOR i IN 0 to 3 LOOP
   s3_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s3_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s2_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s1_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s1_s <='0';
   ASSERT (false) REPORT "Someone left."   SEVERITY note;
-  WAIT FOR 100000*cy_2_t;
+  WAIT FOR 100000*cf_in_t;
       ------------------------------------------------------------------------
   END LOOP;
 
@@ -150,30 +150,30 @@ BEGIN
   s2_s <='0';
   s3_s <='0';
   cl_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
 
       rb_s  <= '1';
-      WAIT FOR 5000*cy_2_t;
+      WAIT FOR 5000*cf_in_t;
 
   -------------------------------------------------------------------------------
   -- let some people enter
   -------------------------------------------------------------------------------
   enter_more: FOR i IN 0 to (2) LOOP
   s1_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s1_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s2_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
   s3_s <='0';
   ASSERT (false) REPORT "Someone entered."   SEVERITY note;
-  WAIT FOR 100000*cy_2_t;
+  WAIT FOR 100000*cf_in_t;
       ------------------------------------------------------------------------
   END LOOP;
 
@@ -184,13 +184,13 @@ BEGIN
   s1_s <='0';
   s2_s <='0';
   s3_s <='0';
-  WAIT FOR 5000*cy_2_t;
+  WAIT FOR 5000*cf_in_t;
 
       cl_s  <= '0';
-      WAIT FOR 5000*cy_2_t;
+      WAIT FOR 5000*cf_in_t;
 
 
-  WAIT FOR 200000*cy_2_t;
+  WAIT FOR 200000*cf_in_t;
     ASSERT (false) REPORT "Test ok!" SEVERITY failure;    
   END PROCESS;
 
