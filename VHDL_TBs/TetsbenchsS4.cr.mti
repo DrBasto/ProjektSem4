@@ -1,100 +1,74 @@
-C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd
+C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:05 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Compiling entity event_logger
-End time: 14:27:05 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity c12en
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:03 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of logger_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity logger_fsm
-End time: 14:27:03 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:04 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity operator_fsm
-End time: 14:27:04 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:06 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Compiling entity top
-End time: 14:27:06 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of control_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity control_fsm
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:05 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Compiling entity uat
-End time: 14:27:06 on Dec 22,2020, Elapsed time: 0:00:01
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:01 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity c10
-End time: 14:27:01 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:05 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of interface
 -- Loading package TEXTIO
@@ -102,58 +76,53 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Loading entity interface
-End time: 14:27:05 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:03 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity logger_fsm
-End time: 14:27:03 on Dec 22,2020, Elapsed time: 0:00:00
-
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of keeper_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity keeper_fsm
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:00 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_a.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity logger_fsm
+
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_a.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Compiling architecture ar1 of c5en
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity c5en
-End time: 14:27:00 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity control_fsm
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:07 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package comp_pack
+-- Compiling entity TB1_top
+-- Compiling architecture ar1 of TB1_top
+
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Compiling architecture ar1 of clock_divider
 -- Loading package TEXTIO
@@ -161,105 +130,78 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Loading entity clock_divider
-End time: 14:27:07 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:03 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity cu1
-End time: 14:27:03 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:05 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Compiling entity interface
-End time: 14:27:05 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity keeper_fsm
-End time: 14:27:03 on Dec 22,2020, Elapsed time: 0:00:01
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:01 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of c10en
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity c10en
-End time: 14:27:01 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:00 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c5en_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity c5en
-End time: 14:27:01 on Dec 22,2020, Elapsed time: 0:00:01
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:04 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of sender_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity sender_fsm
-End time: 14:27:04 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:02 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Compiling entity clock_divider
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:04 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of transmit_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity transmit_fsm
-End time: 14:27:04 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:05 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of event_logger
 -- Loading package TEXTIO
@@ -267,36 +209,27 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Loading entity event_logger
-End time: 14:27:05 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:01 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c12en_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of c12en
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity c12en
-End time: 14:27:02 on Dec 22,2020, Elapsed time: 0:00:01
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:03 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of operator_fsm
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity operator_fsm
-End time: 14:27:04 on Dec 22,2020, Elapsed time: 0:00:01
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:06 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of top
 -- Loading package TEXTIO
@@ -304,46 +237,34 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Loading entity top
-End time: 14:27:06 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:01 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10en_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity c10en
-End time: 14:27:01 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:04 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity sender_fsm
-End time: 14:27:04 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:01 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/c10_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of c10
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Loading entity c10
-End time: 14:27:01 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:06 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd 
 -- Loading package STANDARD
 -- Compiling architecture ar1 of uat
 -- Loading package TEXTIO
@@ -351,17 +272,13 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev
 -- Loading package NUMERIC_STD
 -- Loading package comp_pack
 -- Loading entity uat
-End time: 14:27:06 on Dec 22,2020, Elapsed time: 0:00:00
 
-} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd {1 {vcom -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd
+} {} {}} C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:27:04 on Dec 22,2020
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity transmit_fsm
-End time: 14:27:05 on Dec 22,2020, Elapsed time: 0:00:01
 
 } {} {}}

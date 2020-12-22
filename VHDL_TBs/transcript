@@ -1,75 +1,39 @@
-# Errors: 0, Warnings: 0
 # Compile of c5en_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c5en_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c10_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c10_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c10en_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c10en_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c12en_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of c12en_e.vhd was successful.
-# Errors: 2, Warnings: 0
-# Errors: 0, Warnings: 0
 # Compile of clkdv_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of controlfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of controlfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of keeperfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of keeperfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of cu1_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of cu1_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of loggerfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of loggerfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of operatorfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of operatorfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of senderfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of senderfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of transmitfsm_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of transmitfsm_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of evtlog_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of evtlog_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of interface_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of interface_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of uart_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of uart_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of top_e.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of top_a.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of comp_pack.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of TB-top.vhd was successful.
-# Errors: 0, Warnings: 0
 # Compile of TB-top2.vhd was successful.
-# Errors: 1, Warnings: 0
-# Errors: 1, Warnings: 0
-# Compile of clkdv_a.vhd failed.
+# Compile of clkdv_a.vhd failed with 1 errors.
+# 35 compiles, 1 failed with 1 error.
 # Errors: 0, Warnings: 0
 # Compile of c5en_a.vhd was successful.
 # Errors: 0, Warnings: 0
@@ -140,3 +104,668 @@
 # Compile of TB-top2.vhd was successful.
 # Errors: 0, Warnings: 0
 # Compile of clkdv_a.vhd was successful.
+vsim -gui work.tb2_top
+# vsim -gui work.tb2_top 
+# Start time: 15:35:02 on Dec 22,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.comp_pack
+# Loading work.tb2_top(ar1)
+# Loading work.clock_divider(ar1)
+# Loading work.c10(ar1)
+# Loading work.c10en(ar1)
+# Loading work.c12en(ar1)
+# Loading work.c5en(ar1)
+# Loading work.cu1(ar1)
+# Loading work.event_logger(ar1)
+# Loading work.logger_fsm(ar1)
+# Loading work.keeper_fsm(ar1)
+# Loading work.uat(ar1)
+# Loading work.control_fsm(ar1)
+# Loading work.transmit_fsm(ar1)
+# Loading work.interface(ar1)
+# Loading work.operator_fsm(ar1)
+# Loading work.sender_fsm(ar1)
+add wave -position insertpoint sim:/tb2_top/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sebas  Hostname: ZE-RECHNEN  ProcessID: 5640
+#           Attempting to use alternate WLF file "./wlftv5r7ae".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftv5r7ae
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb2_top/counting_unit
+# ** Note: Someone entered.
+#    Time: 10833290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 21249915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 31666540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 42083165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 52499790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 62916415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 73333040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 83749665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 94166290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 104582915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 114999540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 126249495 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 136666120 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 147082745 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 172915975 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 183749265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 194165890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 204582515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 214999140 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 225415765 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 235832390 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 246249015 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 256665640 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 267082265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 277498890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 287915515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 299165470 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 309582095 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 319998720 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 345831950 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 356665240 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 367081865 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 377498490 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 387915115 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 398331740 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 408748365 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 419164990 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 429581615 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 439998240 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 450414865 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 460831490 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 472081445 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 482498070 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 492914695 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 518747925 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 529581215 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 539997840 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 550414465 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 560831090 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 571247715 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 581664340 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 592080965 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 602497590 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 612914215 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 623330840 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 633747465 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 644997420 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 655414045 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 665830670 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 691663900 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 702497190 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 712913815 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 723330440 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 733747065 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 744163690 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 754580315 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 764996940 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 775413565 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 785830190 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 796246815 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 806663440 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 817913395 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 828330020 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 838746645 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 864579875 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 875413165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 885829790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 896246415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 906663040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 917079665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 927496290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 937912915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 948329540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 958746165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 969162790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 979579415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 990829370 ns  Iteration: 0  Instance: /tb2_top
+run
+# ** Note: Someone entered.
+#    Time: 1001245995 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1011662620 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1037495850 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1048329140 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1058745765 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1069162390 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1079579015 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1089995640 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1100412265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1110828890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1121245515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1131662140 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1142078765 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1152495390 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1163745345 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1174161970 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1184578595 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1210411825 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1221245115 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1231661740 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1242078365 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1252494990 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1262911615 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1273328240 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1283744865 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1294161490 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1304578115 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1314994740 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1325411365 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1336661320 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1347077945 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1357494570 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1383327800 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1394161090 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1404577715 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1414994340 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1425410965 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1435827590 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1446244215 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1456660840 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1467077465 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1477494090 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1487910715 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1498327340 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1509577295 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1519993920 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1530410545 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1556243775 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1567077065 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1577493690 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1587910315 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1598326940 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1608743565 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1619160190 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1629576815 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1639993440 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1650410065 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1660826690 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1671243315 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1682493270 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1692909895 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1703326520 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1729159750 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1739993040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1750409665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1760826290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1771242915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1781659540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1792076165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1802492790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1812909415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1823326040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1833742665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1844159290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1855409245 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1865825870 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1876242495 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 1902075725 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1912909015 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1923325640 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1933742265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1944158890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1954575515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 1964992140 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 1975408765 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1985825390 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 1996242015 ns  Iteration: 0  Instance: /tb2_top
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of evtlog_a.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of interface_a.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of uart_a.vhd was successful.
+# Compile of top_e.vhd was successful.
+# Compile of top_a.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of TB-top.vhd was successful.
+# Compile of TB-top2.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# 35 compiles, 0 failed with no errors.
+# Compile of c5en_a.vhd was successful.
+# Compile of c5en_e.vhd was successful.
+# Compile of c10_a.vhd was successful.
+# Compile of c10_e.vhd was successful.
+# Compile of c10en_a.vhd was successful.
+# Compile of c10en_e.vhd was successful.
+# Compile of c12en_a.vhd was successful.
+# Compile of c12en_e.vhd was successful.
+# Compile of clkdv_e.vhd was successful.
+# Compile of controlfsm_a.vhd was successful.
+# Compile of controlfsm_e.vhd was successful.
+# Compile of keeperfsm_a.vhd was successful.
+# Compile of keeperfsm_e.vhd was successful.
+# Compile of cu1_a.vhd was successful.
+# Compile of cu1_e.vhd was successful.
+# Compile of loggerfsm_a.vhd was successful.
+# Compile of loggerfsm_e.vhd was successful.
+# Compile of operatorfsm_a.vhd was successful.
+# Compile of operatorfsm_e.vhd was successful.
+# Compile of senderfsm_a.vhd was successful.
+# Compile of senderfsm_e.vhd was successful.
+# Compile of transmitfsm_a.vhd was successful.
+# Compile of transmitfsm_e.vhd was successful.
+# Compile of evtlog_e.vhd was successful.
+# Compile of evtlog_a.vhd was successful.
+# Compile of interface_e.vhd was successful.
+# Compile of interface_a.vhd was successful.
+# Compile of uart_e.vhd was successful.
+# Compile of uart_a.vhd was successful.
+# Compile of top_e.vhd was successful.
+# Compile of top_a.vhd was successful.
+# Compile of comp_pack.vhd was successful.
+# Compile of TB-top.vhd was successful.
+# Compile of TB-top2.vhd was successful.
+# Compile of clkdv_a.vhd was successful.
+# 35 compiles, 0 failed with no errors.
+vsim -gui work.tb2_top
+# End time: 15:43:52 on Dec 22,2020, Elapsed time: 0:08:50
+# Errors: 11, Warnings: 8
+# vsim -gui work.tb2_top 
+# Start time: 15:43:52 on Dec 22,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.comp_pack
+# Loading work.tb2_top(ar1)
+# Loading work.clock_divider(ar1)
+# Loading work.c10(ar1)
+# Loading work.c10en(ar1)
+# Loading work.c12en(ar1)
+# Loading work.c5en(ar1)
+# Loading work.cu1(ar1)
+# Loading work.event_logger(ar1)
+# Loading work.logger_fsm(ar1)
+# Loading work.keeper_fsm(ar1)
+# Loading work.uat(ar1)
+# Loading work.control_fsm(ar1)
+# Loading work.transmit_fsm(ar1)
+# Loading work.interface(ar1)
+# Loading work.operator_fsm(ar1)
+# Loading work.sender_fsm(ar1)
+add wave -position insertpoint sim:/tb2_top/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: sebas  Hostname: ZE-RECHNEN  ProcessID: 5640
+#           Attempting to use alternate WLF file "./wlft44c51a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft44c51a
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb2_top/counting_unit
+# ** Note: Someone entered.
+#    Time: 10833290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 21249915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 31666540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 42083165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 52499790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 62916415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 73333040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 83749665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 94166290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 104582915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 114999540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 126249495 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 136666120 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 147082745 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 172915975 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 183749265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 194165890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 204582515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 214999140 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 225415765 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 235832390 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 246249015 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 256665640 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 267082265 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 277498890 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 287915515 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 299165470 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 309582095 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 319998720 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 345831950 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 356665240 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 367081865 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 377498490 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 387915115 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 398331740 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 408748365 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 419164990 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 429581615 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 439998240 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 450414865 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 460831490 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 472081445 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 482498070 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 492914695 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 518747925 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 529581215 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 539997840 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 550414465 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 560831090 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 571247715 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 581664340 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 592080965 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 602497590 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 612914215 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 623330840 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 633747465 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 644997420 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 655414045 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 665830670 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 691663900 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 702497190 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 712913815 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 723330440 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 733747065 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 744163690 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 754580315 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 764996940 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 775413565 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 785830190 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 796246815 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 806663440 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 817913395 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 828330020 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 838746645 ns  Iteration: 0  Instance: /tb2_top
+# ** Failure: Test ok!
+#    Time: 864579875 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 875413165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 885829790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 896246415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 906663040 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 917079665 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 927496290 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered. - The room is full.
+#    Time: 937912915 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 948329540 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 958746165 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 969162790 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone left.
+#    Time: 979579415 ns  Iteration: 0  Instance: /tb2_top
+# ** Note: Someone entered.
+#    Time: 990829370 ns  Iteration: 0  Instance: /tb2_top
+# End time: 16:21:23 on Dec 22,2020, Elapsed time: 0:37:31
+# Errors: 5, Warnings: 4

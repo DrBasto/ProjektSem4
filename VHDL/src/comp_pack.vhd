@@ -268,6 +268,6 @@ PACKAGE comp_pack IS
 
 CONSTANT max_people : integer := 10; --- use in tb
 CONSTANT freq_baud : integer := 1250;
-CONSTANT freq_hz : integer := 12000000;
+--CONSTANT freq_hz : integer := 12000000;
 
 END comp_pack;

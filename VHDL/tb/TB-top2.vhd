@@ -15,7 +15,7 @@ END TB2_top;
 ARCHITECTURE ar1 OF TB2_top IS
 
   --constant
-  CONSTANT cf_in_t : time := 83.3333333333333333333333 ns;
+  CONSTANT cf_to_t : time := 83.3333333333333333333333 ns;
   -- input
   SIGNAL cp_s : std_logic := '0'; 
   SIGNAL rb_s,cl_s,s1_s,s2_s,s3_s: std_logic;
@@ -52,9 +52,13 @@ BEGIN
   -- simulation of a clock
   -------------------------------------------------------------------------------
 
-  takt : PROCESS(cp_s)
+  -------------------------------------------------------------------------------
+  -- simulation of a clock
+  -------------------------------------------------------------------------------
+
+  clock_sim : PROCESS(cp_s)
   BEGIN
-    cp_s <= NOT cp_s AFTER cf_in_t; --12MHz
+    cp_s <= NOT cp_s AFTER cf_to_t; --12MHz
   END PROCESS;
 
   -------------------------------------------------------------------------------
@@ -64,10 +68,10 @@ BEGIN
   -------------------------------------------------------------------------------
   -----------------------------------------------------------
   -------------------------------------------------------------------------------
-  -- generate and compare data
+  -- generate some numbers for the test
   -------------------------------------------------------------------------------
   -------------------------------------------------------------------------------
-  daten : PROCESS
+  some_numbers : PROCESS
 
   BEGIN
   -------------------------------------------------------------------------------
@@ -78,67 +82,67 @@ BEGIN
   s2_s <='0';
   s3_s <='0';
   cl_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
 
       rb_s  <= '1';
-      WAIT FOR 100000*cf_in_t;
+      WAIT FOR 100000*cf_to_t;
   -------------------------------------------------------------------------------
   -- let some people enter
   -------------------------------------------------------------------------------
   enter: FOR i IN 0 to (max_people-1) LOOP
   s1_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s1_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s2_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s3_s <='0';
-  ASSERT (false) REPORT "Someone entered."   SEVERITY note;
-  WAIT FOR 100000*cf_in_t;
+  ASSERT (false) REPORT "Person enters."   SEVERITY note;
+  WAIT FOR 100000*cf_to_t;
       ------------------------------------------------------------------------
   END LOOP;
 
   s1_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s1_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s2_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s3_s <='0';
-  ASSERT (false) REPORT "Someone entered. - The room is full."   SEVERITY note;
-  WAIT FOR 100000*cf_in_t;
+  ASSERT (false) REPORT "Person enters. - The room is full."   SEVERITY note;
+  WAIT FOR 100000*cf_to_t;
 
   -------------------------------------------------------------------------------
   -- let some people leave
   -------------------------------------------------------------------------------
   leave: FOR i IN 0 to 3 LOOP
   s3_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s3_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s2_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s1_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s1_s <='0';
-  ASSERT (false) REPORT "Someone left."   SEVERITY note;
-  WAIT FOR 100000*cf_in_t;
+  ASSERT (false) REPORT "Person leaves."   SEVERITY note;
+  WAIT FOR 100000*cf_to_t;
       ------------------------------------------------------------------------
   END LOOP;
 
@@ -150,30 +154,30 @@ BEGIN
   s2_s <='0';
   s3_s <='0';
   cl_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
 
       rb_s  <= '1';
-      WAIT FOR 5000*cf_in_t;
+      WAIT FOR 5000*cf_to_t;
 
   -------------------------------------------------------------------------------
   -- let some people enter
   -------------------------------------------------------------------------------
   enter_more: FOR i IN 0 to (2) LOOP
   s1_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s1_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s2_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s2_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   ------------------------------------------------------------------------
   s3_s <='1';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
   s3_s <='0';
-  ASSERT (false) REPORT "Someone entered."   SEVERITY note;
-  WAIT FOR 100000*cf_in_t;
+  ASSERT (false) REPORT "Person enters"   SEVERITY note;
+  WAIT FOR 100000*cf_to_t;
       ------------------------------------------------------------------------
   END LOOP;
 
@@ -184,14 +188,14 @@ BEGIN
   s1_s <='0';
   s2_s <='0';
   s3_s <='0';
-  WAIT FOR 5000*cf_in_t;
+  WAIT FOR 5000*cf_to_t;
 
       cl_s  <= '0';
-      WAIT FOR 5000*cf_in_t;
+      WAIT FOR 5000*cf_to_t;
 
 
-  WAIT FOR 200000*cf_in_t;
-    ASSERT (false) REPORT "Test ok!" SEVERITY failure;    
+  WAIT FOR 200000*cf_to_t;
+    ASSERT (false) REPORT "Test ended" SEVERITY failure;    
   END PROCESS;
 
 END ar1;
