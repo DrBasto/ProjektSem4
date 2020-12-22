@@ -64,7 +64,7 @@ ARCHITECTURE ar1 OF TB1_top IS
   -------------------------------------------------------------------------------
   -- let some people enter
   -------------------------------------------------------------------------------
-  enter: FOR i IN 0 to (room_limit-1) LOOP
+  enter: FOR i IN 0 to (max_people-1) LOOP
   s1_s <='1';
   WAIT FOR 5000*cy_2_t;
   s1_s <='0';
