@@ -34,8 +34,29 @@ PACKAGE comp_pack IS
     );
   END COMPONENT;
 
-  -- --------------------------------------------------------------------
+  -----------------------------------------------------------------------
+  COMPONENT toggl IS  -- Signal Toggle
+  PORT (
+    cp_i   : IN  std_logic;                      -- Syscp, @ 12MHz
+    rb_i : IN  std_logic;                      -- Reset, active low
+    sig_i   : IN  std_logic;                      -- Pulseing signal
+    res_o   : OUT std_logic                       -- Toggeled output
+    );
+  END COMPONENT;
 
+  -- --------------------------------------------------------------------
+  COMPONENT debnc IS  -- Debouncer
+  GENERIC (
+    debounce_width : integer
+    );
+  PORT (
+    cp_i : IN  std_logic;                      -- Reset, active low
+    rb_i   : IN  std_logic;                      -- Syscp, @ 12MHz
+    unb_i   : IN  std_logic;                      -- Unbounced Input
+    deb_o   : OUT std_logic                       -- Debounced Output
+    );
+  END COMPONENT;
+  ----------------------------------------------------------------------------
   COMPONENT clock_divider IS
   PORT(
       cp_i : IN std_logic;
@@ -267,6 +288,9 @@ PACKAGE comp_pack IS
 -- --------------------------------------------------------------------
 
 CONSTANT max_people : integer := 10; --- use in tb
+CONSTANT debounce_const  : integer := 19;
+CONSTANT num_width_const : integer :=  6;
+CONSTANT evt_width_const : integer :=  2;
 CONSTANT freq_baud : integer := 1250;
 --CONSTANT freq_hz : integer := 12000000;
 
