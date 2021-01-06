@@ -4,14 +4,14 @@
 
 using namespace std;
 
-const int maxPepole = 3;
+const int maxPepole = 10;
 
 int main()
 {
     // Open serial port
     HANDLE serialHandle;
 
-    serialHandle = CreateFileA("\\\\.\\COM5", GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
+    serialHandle = CreateFileA("\\\\.\\COM4", GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
 
     if (serialHandle == INVALID_HANDLE_VALUE)   //Check Connection
         cout << "Error in opening serial port\n";
@@ -57,7 +57,7 @@ int main()
                 cout << "Someone LEFT\n";
             else if(OLD < TempChar)
                 cout << "Someone ENTERED\n";
-            if(TempChar >= maxPepole)
+            if( (TempChar & 63) >= maxPepole)
                 cout << "Max. number of People is reached\n";
         }
         OLD = TempChar;     //Save current number
