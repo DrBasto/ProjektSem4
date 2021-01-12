@@ -42,24 +42,28 @@ int main()
     // Receiving Data
     byte TempChar = 0; //Temporary character used for reading
     DWORD NoBytesRead;
-    byte OLD = TempChar;
+    byte headcountOLD = 0;
     byte event = 0;
     byte headcount = 0;
-    bool printOnce = true;
-
+    bool runOnce= true;
     while (true) {
         ReadFile(serialHandle,           //Handle of the Serial port
             &TempChar,       //Temporary character
             sizeof(TempChar),//Size of TempChar
             &NoBytesRead,    //Number of bytes read
             NULL);
-
-        if (TempChar != OLD) {  //Compare Current Value with Old one
+        if(runOnce){
+            headcount = TempChar >> 2;
+            runOnce = false;
+        }
+        if (headcount != headcountOLD) {  //Compare Current Value with Old one
             event = TempChar & 3;
             event = (int)event;
             headcount = TempChar >> 2;
             cout << time(0) << " " << (int)headcount << "\n";
             cout << (int)event << "\n";
+            //if(headcount >= maxPeople)
+              //  cout << "Max. number of People is reached\n";
             switch(event){
                 case 0:
                     // idle
@@ -69,7 +73,6 @@ int main()
                 break;
                 case 2:
                     cout << "Someone LEFT\n";
-                     printOnce = true;
                 break;
                 case 3:
                     cout << "Max. number of People is reached\n";
@@ -79,11 +82,7 @@ int main()
                 break;
             }        
         }
-        if(headcount >= maxPeople && printOnce){
-            cout << "Max. number of People is reached\n";
-            printOnce = false;
-        }
-        OLD = TempChar;     //Save current number
+        headcountOLD = headcount;     //Save current number
     }
 
     CloseHandle(serialHandle);//Closing the Serial Port
