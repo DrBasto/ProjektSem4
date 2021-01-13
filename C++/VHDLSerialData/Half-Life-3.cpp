@@ -36,57 +36,66 @@ int main()
     timeout.ReadTotalTimeoutMultiplier = 50;
     timeout.WriteTotalTimeoutConstant = 50;
     timeout.WriteTotalTimeoutMultiplier = 10;
-
     SetCommTimeouts(serialHandle, &timeout);
 
+    //Time
+    time_t curr_time;
+    curr_time = time(NULL);
+
+    tm *tm_local = localtime(&curr_time);
+    std::cout << "HELLO THERE" << "\nThis program is meant to run with an FPGA, verify that\n";
+    std::cout << "\nCurrent local time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;
+
     // Receiving Data
-    byte TempChar = 0; //Temporary character used for reading
+    char nowByte = 0; //Temporary byte used for reading
     DWORD NoBytesRead;
-    byte OLD = TempChar;
-    byte event = 0;
-    byte headcount = 0;
+    char oldByte = nowByte; // Previous byte
+    char event = 0;
+    char headcount = 0;
     bool printOnce = true;
 
     while (true) {
-        ReadFile(serialHandle,           //Handle of the Serial port
-            &TempChar,       //Temporary character
-            sizeof(TempChar),//Size of TempChar
-            &NoBytesRead,    //Number of bytes read
-            NULL);
+        ReadFile(serialHandle, &nowByte, sizeof(nowByte), &NoBytesRead, NULL);
 
-        if (TempChar != OLD) {  //Compare Current Value with Old one
-            event = TempChar & 3;
+        if (nowByte != oldByte) {  //Compare Current Value with oldByte one
+            event = nowByte & 3;
             event = (int)event;
-            headcount = TempChar >> 2;
-            cout << time(0) << " " << (int)headcount << "\n";
-            cout << (int)event << "\n";
+            headcount = nowByte >> 2;
+            std::cout << "\nNumber of people:\t" << (int)headcount << "\t";
             switch(event){
                 case 0:
                     // idle
                 break;
                 case 1:
-                    cout << "Someone ENTERED\n";
+                    std::cout << "Person ENTERED\n";
                 break;
                 case 2:
-                    cout << "Someone LEFT\n";
+                    std::cout << "Person LEFT\n";
                      printOnce = true;
                 break;
                 case 3:
-                    cout << "Max. number of People is reached\n";
+                    std::cout << "Max. number of People is reached\n";
                 break;
                 default:
-                    cout << "Error\n";
+                    std::cout << "Error\n";
                 break;
-            }        
+            }
+            std::cout << "\nCurrent local time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;        
         }
         if(headcount >= maxPeople && printOnce){
-            cout << "Max. number of People is reached\n";
+            std::cout << "\tMax. number of People is reached\n";
             printOnce = false;
         }
-        OLD = TempChar;     //Save current number
+        oldByte = nowByte;     //Save current number
     }
 
     CloseHandle(serialHandle);//Closing the Serial Port
 
     return EXIT_SUCCESS;
 }
+
+//step 1: open port (filestream)
+//step 2: set options (baud, no. of bits, stop bit, parity)
+//step 4: check what event byte
+//step 5: read time, print message
+//step 6: close stream
