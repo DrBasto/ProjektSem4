@@ -2,11 +2,11 @@
 -- top_a.vhd
 -- ENTITIE for the TOP
 -- 
--- Author:	Sebastian Romero ID:32303
+-- Authors:	Sebastian Romero ID:32303
 -- 			Bahadir Ülkü
--- Last edited: 2020-11-13
+-- Last edited: 17.01.2021
 ARCHITECTURE ar1 OF top IS
-
+  -- PIN ASSIGMENT
   ATTRIBUTE chip_pin : string;
   ATTRIBUTE chip_pin of rb_i : SIGNAL IS "E6"; -- S2_USR_BTN_akt_low
   ATTRIBUTE chip_pin of cp_i : SIGNAL IS "H6"; -- CLK_12MHz
@@ -27,7 +27,8 @@ ARCHITECTURE ar1 OF top IS
   ATTRIBUTE chip_pin of sdo_o : SIGNAL IS "K12"; -- Digital out -J2/5
   ATTRIBUTE chip_pin of sdv_o : SIGNAL IS "J10"; -- Digital out -J2/6
   ATTRIBUTE chip_pin of stx_o : SIGNAL IS "H10"; -- Digital out -J2/7
-
+  --------------------------------------------------------------------
+  -- INTERNAL SIGNALS
   SIGNAL br_s : std_logic;
   SIGNAL sec_s : std_logic;
 
@@ -59,6 +60,8 @@ ARCHITECTURE ar1 OF top IS
 
 
 BEGIN
+  ----------------------------------------------------------------
+  -- debouncers for buttons
   db1 : debnc GENERIC MAP (debounce_const)
   PORT    MAP (cp_i,rb_i,s1_i,s1_s);
   db2 : debnc GENERIC MAP (debounce_const)
@@ -66,14 +69,33 @@ BEGIN
   db3 : debnc GENERIC MAP (debounce_const)
   PORT    MAP (cp_i,rb_i,s1_i,s1_s);
   ----------------------------------------------------------------
-  top_clock_divider : clock_divider PORT MAP (cp_i,rb_i,br_s,sec_s);
-  counting_unit: cu1 PORT MAP (cp_i, rb_i, cl_i, cup_s,cdown_s, headcount_s, maxr_s); -- Counting Unit
-  top_event_logger : event_logger PORT MAP (cp_i, rb_i, s1_i, s2_i, s3_i, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
-  uart : uat PORT MAP (cp_i, rb_i, detect_s, br_s, headcount_s, event_s, txd_s, tled_s,done_s); -- UART
-  int : interface PORT MAP (cp_i, rb_i, br_s,  event_s, headcount_s, detect_s,  sdo_s, sdv_s, stx_s,finish_s); -- 3WireInterface
-  tgl : toggl PORT 	  MAP (cp_i, rb_i, sec_s,pls_s);
+  -- clock divider for baud and 1 hz signals
+  top_clock_divider : clock_divider 
+  PORT MAP (cp_i,rb_i,br_s,sec_s);
+  ----------------------------------------------------------------
+  -- Counting Unit
+  counting_unit: cu1 
+  PORT MAP (cp_i, rb_i, cl_i, cup_s,cdown_s, headcount_s, maxr_s); 
+   ----------------------------------------------------------------
+   -- Event logger/sensing unit
+  top_event_logger : event_logger 
+  PORT MAP (cp_i, rb_i, s1_i, s2_i, s3_i, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
+   ----------------------------------------------------------------
+   -- UART
+  uart : uat 
+  PORT MAP (cp_i, rb_i, detect_s, br_s, headcount_s, event_s, txd_s, tled_s,done_s); 
+   ----------------------------------------------------------------
+   -- 3WireInterface
+  int : interface  
+  PORT MAP (cp_i, rb_i, br_s,  event_s, headcount_s, detect_s,  sdo_s, sdv_s, stx_s,finish_s); 
+   ----------------------------------------------------------------
+   -- Toggle for LED
+  tgl : toggl 
+  PORT 	  MAP (cp_i, rb_i, sec_s,pls_s);
 
-  
+  --------------------------------------------------
+  -- SETTING OUTPUTS
+
   txd_o <= txd_s;     -- data transmission
   tled_o <= tled_s;    -- data transmission indication
   

@@ -1,6 +1,16 @@
 ARCHITECTURE ar1 OF transmit_fsm IS
 
-    TYPE state_name IS (idle_st, tstart_st, vec1_st, vec2_st, vec3_st, vec4_st, vec5_st, vec6_st, vec7_st, vec8_st, tstop_st);
+    TYPE state_name IS (idle_st,    -- idle
+                        tstart_st,  -- bitstart
+                        vec1_st,    -- bit1 (Event0)
+                        vec2_st,    -- bit2 (Event1)
+                        vec3_st,    -- bit3 (headcount0)
+                        vec4_st,    -- bit4 (headcount1)
+                        vec5_st,    -- bit5	(headcount2)
+                        vec6_st,    -- bit6 (headcount3)
+                        vec7_st,    -- bit7 (headcount4)
+                        vec8_st,    -- bit8 (headcount5)
+                        tstop_st);  -- bitstop
     SIGNAL now_st,nxt_st : state_name;
 
     BEGIN
@@ -53,7 +63,7 @@ ARCHITECTURE ar1 OF transmit_fsm IS
       END CASE;
       END PROCESS st_trans;
     
-      ausgabe: PROCESS (now_st,event_s,headcount_s)
+      st_outputs: PROCESS (now_st,event_s,headcount_s)
       BEGIN
         CASE now_st IS
          WHEN idle_st  =>     txd_s <= '1';            tled_s <= '0' ; done_s <= '0' ;
@@ -68,6 +78,6 @@ ARCHITECTURE ar1 OF transmit_fsm IS
          WHEN vec8_st  =>     txd_s <= headcount_s(5); tled_s <= '1' ; done_s <= '0' ;
          WHEN tstop_st =>     txd_s <= '1';            tled_s <= '0' ; done_s <= '1' ;
         END CASE;
-      END PROCESS ausgabe;
+      END PROCESS st_outputs;
     
     END ar1;

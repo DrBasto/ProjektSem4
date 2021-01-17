@@ -1,6 +1,7 @@
 ARCHITECTURE ar1 OF operator_fsm IS
 
-    TYPE state_name IS (idle_st, send_st);
+    TYPE state_name IS (idle_st, 
+                        send_st);
     SIGNAL now_st,nxt_st : state_name;
 
     BEGIN
@@ -26,12 +27,12 @@ ARCHITECTURE ar1 OF operator_fsm IS
         END CASE;
         END PROCESS st_trans;
         
-        ausgabe: PROCESS (now_st)
+        st_outputs: PROCESS (now_st)
         BEGIN
         CASE now_st IS
             WHEN idle_st  => send_s <= '0';
             WHEN send_st  => send_s <= '1';
         END CASE;
-        END PROCESS ausgabe;
+        END PROCESS st_outputs;
     
     END ar1;

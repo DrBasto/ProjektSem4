@@ -1,6 +1,12 @@
 ARCHITECTURE ar1 OF keeper_fsm IS
 
-    TYPE state_name IS (idle_st, maxreach_st, entry_st, exit_st, maxhold_st, exit_interv_st,maxsend_st); 
+    TYPE state_name IS (idle_st, 
+                        maxreach_st,    -- max number of people
+                        entry_st,       -- someone enters
+                        exit_st,        -- someone leaves
+                        maxhold_st,     -- hold max
+                        exit_interv_st, -- aux leave
+                        maxsend_st);    -- send max
     SIGNAL now_st,nxt_st : state_name;
 
     BEGIN

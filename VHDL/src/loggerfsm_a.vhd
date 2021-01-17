@@ -1,6 +1,12 @@
 ARCHITECTURE ar1 OF logger_fsm IS
 
-    TYPE state_name IS (idle_st, s1passlr_st, s2passlr_st, entry_st, s3passrl_st, s2passrl_st, exit_st);
+    TYPE state_name IS (idle_st,     -- idle, waiting
+                        s1passlr_st, -- first ligth sensor active
+                        s2passlr_st, -- second light sensor active
+                        entry_st,    -- 3rd light sensor active, someone enters
+                        s3passrl_st, -- 3rd light sensor active
+                        s2passrl_st, -- 2nd light sensor active
+                        exit_st);    -- 3rd light sensor active, someone leaves
     SIGNAL now_st,nxt_st : state_name;
 
     BEGIN
@@ -45,7 +51,7 @@ ARCHITECTURE ar1 OF logger_fsm IS
       END CASE;
       END PROCESS st_trans;
     
-      ausgabe: PROCESS (now_st)
+      st_outputs: PROCESS (now_st)
       BEGIN
         CASE now_st IS
          WHEN idle_st      =>  enter_s <= '0'; exit_s <= '0' ; cup_s <= '0' ; cdown_s <= '0';
@@ -56,6 +62,6 @@ ARCHITECTURE ar1 OF logger_fsm IS
          WHEN s2passrl_st  =>  enter_s <= '0'; exit_s <= '0' ; cup_s <= '0' ; cdown_s <= '0';
          WHEN exit_st      =>  enter_s <= '0'; exit_s <= '1' ; cup_s <= '0' ; cdown_s <= '1';
         END CASE;
-      END PROCESS ausgabe;
+      END PROCESS st_outputs;
     
     END ar1;
