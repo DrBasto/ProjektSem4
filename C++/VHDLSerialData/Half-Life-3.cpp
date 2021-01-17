@@ -2,8 +2,6 @@
 #include <ctime>
 #include <windows.h>
 
-using namespace std;
-
 const int maxPeople = 10;
 
 int main()
@@ -14,9 +12,9 @@ int main()
     serialHandle = CreateFileA("\\\\.\\COM5", GENERIC_READ, 0, NULL, OPEN_EXISTING, 0, NULL);
 
     if (serialHandle == INVALID_HANDLE_VALUE)   //Check Connection
-        cout << "Error in opening serial port\n";
+        std::cout << "Error in opening serial port\n";
     else{
-        cout << "Opening serial port successful\n";
+        std::cout << "Opening serial port successful\n";
         // Do some basic settings
         DCB serialParams = { 0 };
         serialParams.DCBlength = sizeof(serialParams);
