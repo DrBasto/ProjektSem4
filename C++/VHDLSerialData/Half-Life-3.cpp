@@ -15,81 +15,84 @@ int main()
 
     if (serialHandle == INVALID_HANDLE_VALUE)   //Check Connection
         cout << "Error in opening serial port\n";
-    else
-        cout << "opening serial port successful\n";
+    else{
+        cout << "Opening serial port successful\n";
+        // Do some basic settings
+        DCB serialParams = { 0 };
+        serialParams.DCBlength = sizeof(serialParams);
 
-    // Do some basic settings
-    DCB serialParams = { 0 };
-    serialParams.DCBlength = sizeof(serialParams);
+        GetCommState(serialHandle, &serialParams);
+        serialParams.BaudRate = 9600;
+        serialParams.ByteSize = 8;
+        serialParams.StopBits = ONESTOPBIT;
+        serialParams.Parity = NOPARITY;
+        SetCommState(serialHandle, &serialParams);
 
-    GetCommState(serialHandle, &serialParams);
-    serialParams.BaudRate = 9600;
-    serialParams.ByteSize = 8;
-    serialParams.StopBits = ONESTOPBIT;
-    serialParams.Parity = NOPARITY;
-    SetCommState(serialHandle, &serialParams);
+        // Set timeouts
+        COMMTIMEOUTS timeout = { 0 };
+        timeout.ReadIntervalTimeout = 50;
+        timeout.ReadTotalTimeoutConstant = 50;
+        timeout.ReadTotalTimeoutMultiplier = 50;
+        timeout.WriteTotalTimeoutConstant = 50;
+        timeout.WriteTotalTimeoutMultiplier = 10;
+        SetCommTimeouts(serialHandle, &timeout);
 
-    // Set timeouts
-    COMMTIMEOUTS timeout = { 0 };
-    timeout.ReadIntervalTimeout = 50;
-    timeout.ReadTotalTimeoutConstant = 50;
-    timeout.ReadTotalTimeoutMultiplier = 50;
-    timeout.WriteTotalTimeoutConstant = 50;
-    timeout.WriteTotalTimeoutMultiplier = 10;
-    SetCommTimeouts(serialHandle, &timeout);
+        //Time
+        time_t curr_time;
+        curr_time = time(NULL);
 
-    //Time
-    time_t curr_time;
-    curr_time = time(NULL);
+        tm *tm_local = localtime(&curr_time);
+        std::cout << "HELLO WORLD!" << "\nThis program is meant to run with an FPGA, verify that\n";
+        std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;
 
-    tm *tm_local = localtime(&curr_time);
-    std::cout << "HELLO THERE" << "\nThis program is meant to run with an FPGA, verify that\n";
-    std::cout << "\nCurrent local time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;
+        // Receiving Data
+        char nowByte = 0; //Temporary byte used for reading
+        DWORD NoBytesRead;
+        char oldByte = nowByte; // Previous byte
+        char event = 0;
+        char headcount = 0;
+        bool printOnce = true;
 
-    // Receiving Data
-    char nowByte = 0; //Temporary byte used for reading
-    DWORD NoBytesRead;
-    char oldByte = nowByte; // Previous byte
-    char event = 0;
-    char headcount = 0;
-    bool printOnce = true;
+        while (true) {
+            ReadFile(serialHandle, &nowByte, sizeof(nowByte), &NoBytesRead, NULL);
 
-    while (true) {
-        ReadFile(serialHandle, &nowByte, sizeof(nowByte), &NoBytesRead, NULL);
-
-        if (nowByte != oldByte) {  //Compare Current Value with oldByte one
-            event = nowByte & 3;
-            event = (int)event;
-            headcount = nowByte >> 2;
-            std::cout << "\nNumber of people:\t" << (int)headcount << "\t";
-            switch(event){
-                case 0:
-                    // idle
-                break;
-                case 1:
-                    std::cout << "Person ENTERED\n";
-                break;
-                case 2:
-                    std::cout << "Person LEFT\n";
-                     printOnce = true;
-                break;
-                case 3:
-                    std::cout << "Max. number of People is reached\n";
-                break;
-                default:
-                    std::cout << "Error\n";
-                break;
+            if (nowByte != oldByte) {  //Compare Current Value with oldByte one
+                event = nowByte & 3;
+                event = (int)event;
+                headcount = nowByte >> 2;
+                std::cout << "\nNumber of people:\t" << (int)headcount << "\t";
+                switch(event){
+                    case 0:
+                        // idle
+                    break;
+                    case 1:
+                        std::cout << "Person ENTERED\n";
+                    break;
+                    case 2:
+                        std::cout << "Person LEFT\n";
+                        printOnce = true;
+                    break;
+                    case 3:
+                        std::cout << "Max. number of People is reached\n";
+                    break;
+                    default:
+                        std::cout << "Error\n";
+                    break;
+                }
+                std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;        
             }
-            std::cout << "\nCurrent local time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;        
+            if(headcount >= maxPeople && printOnce){
+                std::cout << "\tMax. number of People is reached\n";
+                printOnce = false;
+            }
+            oldByte = nowByte;     //Save current byte
         }
-        if(headcount >= maxPeople && printOnce){
-            std::cout << "\tMax. number of People is reached\n";
-            printOnce = false;
-        }
-        oldByte = nowByte;     //Save current number
-    }
 
-    CloseHandle(serialHandle);//Closing the Serial Port
+        CloseHandle(serialHandle);//Closing the Serial Port
+    }
+        
+
+    
 
     return EXIT_SUCCESS;
 }

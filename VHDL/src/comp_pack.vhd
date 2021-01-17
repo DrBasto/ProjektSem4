@@ -138,53 +138,6 @@ PACKAGE comp_pack IS
   -- --------------------------------------------------------------------
   -- --------------------------------------------------------------------
 
-  -- CLOCK_DIVIDEr
-  -- --------------------------------------------------------------------
-
-  COMPONENT c10en IS
-  PORT(
-    rb_i : IN std_logic;
-    cp_i : IN std_logic;
-    enable_i : IN std_logic;
-    cout_o : OUT std_logic
-    );
-  END COMPONENT;
-
-  -- --------------------------------------------------------------------
-
-  COMPONENT c10 IS
-  PORT(
-    rb_i : IN std_logic;
-    cp_i : IN std_logic;
-    cout_o : OUT std_logic
-    );
-  END COMPONENT;
-
-  -- --------------------------------------------------------------------
-
-  COMPONENT c12en IS
-  PORT(
-    rb_i : IN std_logic;
-    cp_i : IN std_logic;
-    enable_i : IN std_logic;
-    cout_o : OUT std_logic
-    );
-  END COMPONENT;
-
-  -- --------------------------------------------------------------------
-
-  COMPONENT c5en IS
-  PORT(
-    rb_i : IN std_logic;
-    cp_i : IN std_logic;
-    enable_i : IN std_logic;
-    cout_o : OUT std_logic
-    );
-  END COMPONENT;
-
-  -- --------------------------------------------------------------------
-  -- --------------------------------------------------------------------
-
   -- UART
   -- --------------------------------------------------------------------
 
@@ -291,7 +244,5 @@ CONSTANT max_people : integer := 10; --- use in tb
 CONSTANT debounce_const  : integer := 19;
 CONSTANT num_width_const : integer :=  6;
 CONSTANT evt_width_const : integer :=  2;
-CONSTANT freq_baud : integer := 1250;
---CONSTANT freq_hz : integer := 12000000;
 
 END comp_pack;
