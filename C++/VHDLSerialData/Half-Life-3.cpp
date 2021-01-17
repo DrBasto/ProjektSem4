@@ -58,7 +58,7 @@ int main()
                 event = nowByte & 3;
                 event = (int)event;
                 headcount = nowByte >> 2;
-                std::cout << "\nNumber of people:\t" << (int)headcount << "\t";
+                std::cout << "\nNumber of people: " << (int)headcount << "\t";
                 switch(event){
                     case 0:
                         // idle
@@ -77,6 +77,8 @@ int main()
                         std::cout << "Error\n";
                     break;
                 }
+                curr_time = time(NULL);
+                tm_local = localtime(&curr_time);
                 std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;        
             }
             if(headcount >= maxPeople && printOnce){
