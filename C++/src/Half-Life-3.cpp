@@ -41,7 +41,7 @@ int main()
 
         tm *tm_local = localtime(&curr_time);
         std::cout << "HELLO WORLD!" << "\nThis program is meant to run with an FPGA, verify that\n";
-        std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;
+        std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec << "\n";
 
         // Receiving Data
         char nowByte = 0; //Temporary byte used for reading
@@ -79,10 +79,10 @@ int main()
                 }
                 curr_time = time(NULL);
                 tm_local = localtime(&curr_time);
-                std::cout << "\nTime : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec;        
+                std::cout << "Time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec << "\n";        
             }
             if(headcount >= maxPeople && printOnce){
-                std::cout << "\tMax. number of People is reached\n";
+                std::cout << "Max. number of People is reached\n";
                 printOnce = false;
             }
             oldByte = nowByte;     //Save current byte
