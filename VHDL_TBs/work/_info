@@ -197,7 +197,7 @@ Z14 DPx4 work 9 comp_pack 0 22 Bg57keiE312@?KkLGzJX;0
 R0
 R1
 R2
-!i122 1786
+!i122 1816
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd
@@ -207,9 +207,9 @@ VQ=jJBXiPkgHSBRbm^=gV41
 !s100 ;PbTGj`hL1:Dn0:U@HDeG0
 R4
 32
-!s110 1610919447
+Z15 !s110 1611012076
 !i10b 1
-Z15 !s108 1610919447.000000
+Z16 !s108 1611012076.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_e.vhd|
 !i113 1
@@ -220,21 +220,21 @@ R14
 R0
 R1
 R2
-Z16 DEx4 work 13 clock_divider 0 22 Q=jJBXiPkgHSBRbm^=gV41
-!i122 1801
-Z17 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
-Z18 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
+Z17 DEx4 work 13 clock_divider 0 22 Q=jJBXiPkgHSBRbm^=gV41
+!i122 1831
+Z18 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
+Z19 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd
 l9
-L2 36
-V8A2fIGWKD33lVXBKCmB4C3
-!s100 Q]_zlJJ03B9:ZUo3TiSel2
+Z20 L2 36
+Z21 V8A2fIGWKD33lVXBKCmB4C3
+Z22 !s100 Q]_zlJJ03B9:ZUo3TiSel2
 R4
 32
-Z19 !s110 1610919454
+Z23 !s110 1611012082
 !i10b 1
-!s108 1610919454.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd|
-Z21 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd|
+Z24 !s108 1611012082.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd|
+Z26 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/clkdv_a.vhd|
 !i113 1
 R7
 R8
@@ -242,7 +242,7 @@ Pcomp_pack
 R0
 R1
 R2
-!i122 1798
+!i122 1828
 R13
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/comp_pack.vhd
@@ -253,9 +253,9 @@ VBg57keiE312@?KkLGzJX;0
 !s100 I7J64_`P>j0[>E8BhfkFK2
 R4
 32
-Z22 !s110 1610919453
+R23
 !i10b 1
-Z23 !s108 1610919453.000000
+R24
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/comp_pack.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/comp_pack.vhd|
 !i113 1
@@ -266,7 +266,7 @@ R13
 R0
 R1
 R2
-!i122 1787
+!i122 1817
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd
@@ -276,9 +276,9 @@ VjoANP4?RQLHzjTa]C1ecb0
 !s100 91GoD>N:@Xd[oMo?OHfSA1
 R4
 32
-Z24 !s110 1610919448
+R15
 !i10b 1
-Z25 !s108 1610919448.000000
+R16
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_e.vhd|
 !i113 1
@@ -290,18 +290,18 @@ R0
 R1
 R2
 DEx4 work 11 control_fsm 0 22 joANP4?RQLHzjTa]C1ecb0
-!i122 1787
+!i122 1817
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd
 l7
-Z26 L1 38
+Z27 L1 38
 V<>=nO0DzWZEZ64AeFZPja2
 !s100 @z7^`B^JimFlDc^079WV21
 R4
 32
-R24
-!i10b 1
 R15
+!i10b 1
+R16
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/controlfsm_a.vhd|
 !i113 1
@@ -312,7 +312,7 @@ R13
 R0
 R1
 R2
-!i122 1789
+!i122 1819
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd
@@ -322,9 +322,9 @@ VfA5e:US:i5N:z^<?9BNQ^1
 !s100 g2O@m;4PN?]KSRfeW9c4o1
 R4
 32
-Z27 !s110 1610919449
+Z28 !s110 1611012077
 !i10b 1
-Z28 !s108 1610919449.000000
+Z29 !s108 1611012077.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_e.vhd|
 !i113 1
@@ -335,7 +335,7 @@ R0
 R1
 R2
 DEx4 work 3 cu1 0 22 fA5e:US:i5N:z^<?9BNQ^1
-!i122 1789
+!i122 1819
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_a.vhd
 l5
@@ -344,9 +344,9 @@ V1jSc?]@<kA8@dFN9JR1m^0
 !s100 C1KLh]n[ezb0;de535S7]0
 R4
 32
-R27
+R28
 !i10b 1
-R25
+R29
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/cu1_a.vhd|
 !i113 1
@@ -358,7 +358,7 @@ R14
 R0
 R1
 R2
-!i122 1794
+!i122 1824
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd
@@ -368,9 +368,9 @@ VdC7`cU3P[4oz9^LH7K22;2
 !s100 RiK0EKECoch0kB<bjjHMj1
 R4
 32
-Z29 !s110 1610919451
+Z30 !s110 1611012080
 !i10b 1
-Z30 !s108 1610919451.000000
+Z31 !s108 1611012079.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_e.vhd|
 !i113 1
@@ -382,7 +382,7 @@ R0
 R1
 R2
 DEx4 work 12 event_logger 0 22 dC7`cU3P[4oz9^LH7K22;2
-!i122 1795
+!i122 1825
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd
 l7
@@ -391,9 +391,9 @@ VaD]YND7l43SdNz1NDB4fl1
 !s100 bgI<cKRVPSIahVQT6cJU83
 R4
 32
-R29
-!i10b 1
 R30
+!i10b 1
+Z32 !s108 1611012080.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/evtlog_a.vhd|
 !i113 1
@@ -405,7 +405,7 @@ R14
 R0
 R1
 R2
-!i122 1795
+!i122 1825
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd
@@ -415,9 +415,9 @@ VCmjcWk@iYn_gzYZ0kbnkM1
 !s100 ej4_:8F:ghM]=XAK;o5hi1
 R4
 32
-Z31 !s110 1610919452
-!i10b 1
 R30
+!i10b 1
+R32
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_e.vhd|
 !i113 1
@@ -429,7 +429,7 @@ R0
 R1
 R2
 DEx4 work 9 interface 0 22 CmjcWk@iYn_gzYZ0kbnkM1
-!i122 1796
+!i122 1826
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd
 l7
@@ -438,9 +438,9 @@ V;Y8e`Q5JfahM<XXhKC^PR1
 !s100 RFAji:a0RL<diEOa2bQg51
 R4
 32
-R31
+R30
 !i10b 1
-Z32 !s108 1610919452.000000
+R32
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/interface_a.vhd|
 !i113 1
@@ -451,7 +451,7 @@ R13
 R0
 R1
 R2
-!i122 1788
+!i122 1818
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd
@@ -461,32 +461,32 @@ V?h9<MHn3n5=5gmIcBd@D91
 !s100 edW`3IL71<TlW1FDeJ^Rf0
 R4
 32
-R24
+R28
 !i10b 1
-R25
+R29
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_e.vhd|
 !i113 1
 R7
 R8
 Aar1
-w1610919305
+w1611011929
 R0
 R1
 R2
 DEx4 work 10 keeper_fsm 0 22 ?h9<MHn3n5=5gmIcBd@D91
-!i122 1788
+!i122 1818
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd
 l12
 L1 66
-VSCQGHDTi?kF<TG]A>J5Ec1
-!s100 [LXg34V@XSf0gn<_im7K>0
+V:Ug;j>b=k7BSSUlYPdf0Q3
+!s100 jAK<6?DhH=7QPQ]M0IG^c2
 R4
 32
-R24
+R28
 !i10b 1
-R25
+R16
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/keeperfsm_a.vhd|
 !i113 1
@@ -497,7 +497,7 @@ R13
 R0
 R1
 R2
-!i122 1790
+!i122 1820
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd
@@ -507,9 +507,9 @@ V`gTSbBA;C2UF?zieh?m_;3
 !s100 L@N51cnD;mAQA2BD9Y;]Z2
 R4
 32
-R27
+Z33 !s110 1611012078
 !i10b 1
-R28
+Z34 !s108 1611012078.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_e.vhd|
 !i113 1
@@ -521,7 +521,7 @@ R0
 R1
 R2
 DEx4 work 10 logger_fsm 0 22 `gTSbBA;C2UF?zieh?m_;3
-!i122 1790
+!i122 1820
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd
 l12
@@ -530,9 +530,9 @@ VlQ2ZiI:nRV<X^69O9<5h?3
 !s100 TKK_UO0DJzeX@_SZcJM7z2
 R4
 32
-R27
+R33
 !i10b 1
-R28
+R29
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/loggerfsm_a.vhd|
 !i113 1
@@ -543,7 +543,7 @@ R13
 R0
 R1
 R2
-!i122 1791
+!i122 1821
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd
@@ -553,9 +553,9 @@ V9k;>bK4eFm2=^`GQ_e[620
 !s100 I_>TN@9KbA@QBQZO;aP1U1
 R4
 32
-Z33 !s110 1610919450
+R33
 !i10b 1
-Z34 !s108 1610919450.000000
+R34
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_e.vhd|
 !i113 1
@@ -567,18 +567,18 @@ R0
 R1
 R2
 DEx4 work 12 operator_fsm 0 22 9k;>bK4eFm2=^`GQ_e[620
-!i122 1791
+!i122 1821
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd
 l7
-R26
+R27
 Vj`Dcgez];7[Blnd7i1n>b1
 !s100 de=^6Bf5e`hHDoS^hTeLY3
 R4
 32
 R33
 !i10b 1
-R28
+R34
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/operatorfsm_a.vhd|
 !i113 1
@@ -589,7 +589,7 @@ R13
 R0
 R1
 R2
-!i122 1792
+!i122 1822
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd
@@ -599,9 +599,9 @@ VY2c1<gzV8[NX[03llRA183
 !s100 QKdY_U=M37?_1l`eL]23i2
 R4
 32
-R33
+Z35 !s110 1611012079
 !i10b 1
-R34
+R31
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_e.vhd|
 !i113 1
@@ -613,16 +613,16 @@ R0
 R1
 R2
 DEx4 work 10 sender_fsm 0 22 Y2c1<gzV8[NX[03llRA183
-!i122 1792
+!i122 1822
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd
 l16
-Z35 L1 83
+Z36 L1 83
 VoBhfb3idm?D;ZlZBOazac3
 !s100 ToK@M8?QBzU0Ibin[QQzX0
 R4
 32
-R33
+R35
 !i10b 1
 R34
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/senderfsm_a.vhd|
@@ -636,21 +636,21 @@ R14
 R0
 R1
 R2
-!i122 1799
+!i122 1829
 R3
-Z36 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd
-Z37 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd
+Z37 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd
+Z38 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd
 l0
-Z38 L10 1
+Z39 L10 1
 VL?^JL6NDIW=oWF@jnk03<3
 !s100 JF<0GXDB7?0OKUQdz?S8e1
 R4
 32
-R22
-!i10b 1
 R23
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd|
-Z40 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd|
+!i10b 1
+R24
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd|
+Z41 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top.vhd|
 !i113 1
 R7
 R8
@@ -660,18 +660,18 @@ R0
 R1
 R2
 DEx4 work 7 tb1_top 0 22 L?^JL6NDIW=oWF@jnk03<3
-!i122 1799
+!i122 1829
 l25
 L15 162
 VcTCIYDmCX<9GKk``[T=YJ2
 !s100 3bVGihO3H6]EP6Ci99@TH0
 R4
 32
-R22
-!i10b 1
 R23
-R39
+!i10b 1
+R24
 R40
+R41
 !i113 1
 R7
 R8
@@ -681,21 +681,21 @@ R14
 R0
 R1
 R2
-!i122 1800
+!i122 1830
 R3
-Z41 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd
-Z42 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd
+Z42 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd
+Z43 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd
 l0
-R38
+R39
 VPLf]WgckQYdJjzJlPPX1N2
 !s100 lO:jI_9<h?6;SD<;1kDYi0
 R4
 32
-R19
-!i10b 1
 R23
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd|
-Z44 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd|
+!i10b 1
+R24
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd|
+Z45 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/tb/TB-top2.vhd|
 !i113 1
 R7
 R8
@@ -705,18 +705,18 @@ R0
 R1
 R2
 DEx4 work 7 tb2_top 0 22 PLf]WgckQYdJjzJlPPX1N2
-!i122 1800
+!i122 1830
 l41
 L15 187
 V;n57hKNH8fcZk6h^62TWg2
 !s100 I6HZ3MAIzC_F@2Yz^bI1L3
 R4
 32
-R19
-!i10b 1
 R23
-R43
+!i10b 1
+R24
 R44
+R45
 !i113 1
 R7
 R8
@@ -726,7 +726,7 @@ R14
 R0
 R1
 R2
-!i122 1797
+!i122 1827
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd
@@ -736,9 +736,9 @@ VA318RTBn_l3nGOf_Y6:FA2
 !s100 0MbI1[Zn6zK^2Dg=a`]mk2
 R4
 32
-R22
+Z46 !s110 1611012081
 !i10b 1
-R32
+Z47 !s108 1611012081.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_e.vhd|
 !i113 1
@@ -751,7 +751,7 @@ R0
 R1
 R2
 DEx4 work 3 top 0 22 A318RTBn_l3nGOf_Y6:FA2
-!i122 1798
+!i122 1828
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd
 l62
@@ -760,9 +760,9 @@ V2n_n_i9Q@;Tj7hD;QcU4m3
 !s100 @R5aKBUXmlKO<j<W33B2N0
 R4
 32
-R22
+R46
 !i10b 1
-R23
+R47
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/top_a.vhd|
 !i113 1
@@ -773,7 +773,7 @@ R13
 R0
 R1
 R2
-!i122 1793
+!i122 1823
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd
@@ -783,9 +783,9 @@ VSe1YSO26A`V>P7QoI6Ok62
 !s100 AQF[JC7DhGDE5NAT_Y<KE3
 R4
 32
-R29
+R35
 !i10b 1
-R30
+R31
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_e.vhd|
 !i113 1
@@ -797,18 +797,18 @@ R0
 R1
 R2
 DEx4 work 12 transmit_fsm 0 22 Se1YSO26A`V>P7QoI6Ok62
-!i122 1793
+!i122 1823
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd
 l16
-R35
+R36
 VNLV2k:nRnzdKEo1Dj;`[o0
 !s100 bWzO@oN`a5c:0BA1d;7D:2
 R4
 32
-R29
+R35
 !i10b 1
-R34
+R31
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/transmitfsm_a.vhd|
 !i113 1
@@ -820,7 +820,7 @@ R14
 R0
 R1
 R2
-!i122 1796
+!i122 1826
 R3
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd
@@ -830,9 +830,9 @@ VT0EnU?InJXWIL?U9jaF=d2
 !s100 ]on4h@XKQ^nT6ViVAo]Q60
 R4
 32
-R31
+R46
 !i10b 1
-R32
+R47
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_e.vhd|
 !i113 1
@@ -844,7 +844,7 @@ R0
 R1
 R2
 DEx4 work 3 uat 0 22 T0EnU?InJXWIL?U9jaF=d2
-!i122 1797
+!i122 1827
 8C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd
 FC:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd
 l9
@@ -853,9 +853,9 @@ VCSa=RM63_LCES6F;_DkzK2
 !s100 EB1;UnSh4kcm:0IZ8_CO=1
 R4
 32
-R31
+R46
 !i10b 1
-R32
+R47
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd|
 !s107 C:/Users/sebas/Documents/Dev/VHDL2/ProjektSem4/VHDL/src/uart_a.vhd|
 !i113 1

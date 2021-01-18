@@ -1,10 +1,4 @@
--- ----------------------------------------------------------------------------
--- top_a.vhd
--- ENTITIE for the TOP
--- 
--- Authors:	Sebastian Romero ID:32303
--- 			Bahadir Ülkü
--- Last edited: 17.01.2021
+
 ARCHITECTURE ar1 OF top IS
   -- PIN ASSIGMENT
   ATTRIBUTE chip_pin : string;
@@ -32,12 +26,12 @@ ARCHITECTURE ar1 OF top IS
   SIGNAL br_s : std_logic;
   SIGNAL sec_s : std_logic;
 
-  SIGNAL headcount_s : std_logic_vector(5 DOWNTO 0);
-  SIGNAL maxr_s : std_logic;
+  SIGNAL headcount_s : std_logic_vector(5 DOWNTO 0); -- number of people
+  SIGNAL maxr_s : std_logic;  --- max is reached signal
 
   SIGNAL cup_s : std_logic;	-- increment counter
   SIGNAL cdown_s : std_logic;	-- decrement counter
-  SIGNAL event_s : std_logic_vector(1 DOWNTO 0);
+  SIGNAL event_s : std_logic_vector(1 DOWNTO 0); -- event vector 
   SIGNAL detect_s : std_logic;	-- submit serial (data valid)
   SIGNAL red_s: std_logic;
   SIGNAL grn_s: std_logic;
@@ -108,6 +102,6 @@ BEGIN
   red_o <= red_s;     -- red LED
   grn_o <= grn_s; -- green LED  
   sound_o <= sound_s; 
-  rb_o <= rb_i;       -- reset indication
+  rb_o <= not rb_i;       -- reset indication
 
 END ar1;

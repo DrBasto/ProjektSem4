@@ -49,7 +49,6 @@ int main()
         char oldByte = nowByte; // Previous byte
         char event = 0;
         char headcount = 0;
-        bool printOnce = true;
 
         while (true) {
             ReadFile(serialHandle, &nowByte, sizeof(nowByte), &NoBytesRead, NULL);
@@ -68,22 +67,17 @@ int main()
                     break;
                     case 2:
                         std::cout << "Person LEFT\n";
-                        printOnce = true;
                     break;
                     case 3:
                         std::cout << "Max. number of People is reached\n";
                     break;
                     default:
-                        std::cout << "Error\n";
+                        std::cout << "Error: Please contact IT\n";
                     break;
                 }
                 curr_time = time(NULL);
                 tm_local = localtime(&curr_time);
                 std::cout << "Time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec << "\n";        
-            }
-            if(headcount >= maxPeople && printOnce){
-                std::cout << "Max. number of People is reached\n";
-                printOnce = false;
             }
             oldByte = nowByte;     //Save current byte
         }

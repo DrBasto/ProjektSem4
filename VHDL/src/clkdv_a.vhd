@@ -2,8 +2,8 @@
 ARCHITECTURE ar1 OF clock_divider IS
 
 
-SIGNAL brt_s : unsigned(10 DOWNTO 0);
-SIGNAL sect_s : unsigned(23 DOWNTO 0);
+SIGNAL brt_s : unsigned(10 DOWNTO 0);  ---- baud rate counter
+SIGNAL sect_s : unsigned(23 DOWNTO 0); ---- baud rate counter
 
 
 BEGIN
