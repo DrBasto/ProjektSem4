@@ -23,8 +23,8 @@ ARCHITECTURE ar1 OF top IS
   ATTRIBUTE chip_pin of stx_o : SIGNAL IS "H10"; -- Digital out -J2/7
   --------------------------------------------------------------------
   -- INTERNAL SIGNALS
-  SIGNAL br_s : std_logic;
-  SIGNAL sec_s : std_logic;
+  SIGNAL br_s : std_logic; --- baud rate signal 9600 Hz
+  SIGNAL sec_s : std_logic; --- 1hz signal
 
   SIGNAL headcount_s : std_logic_vector(5 DOWNTO 0); -- number of people
   SIGNAL maxr_s : std_logic;  --- max is reached signal
@@ -39,12 +39,12 @@ ARCHITECTURE ar1 OF top IS
   
   SIGNAL txd_s : std_logic;
   SIGNAL tled_s : std_logic;
-  SIGNAL done_s : std_logic;
+  SIGNAL done_s : std_logic; --- from UART, done transmitting
 
   SIGNAL sdo_s : std_logic;
   SIGNAL sdv_s : std_logic;
   SIGNAL stx_s : std_logic;
-  SIGNAL finish_s : std_logic;
+  SIGNAL finish_s : std_logic; ---  from 3 wire interface, finishing transmitting
 
   SIGNAL pls_s : std_logic; -- active pulse
   SIGNAL s1_s : std_logic;    -- debounced sensor 1 signal
@@ -59,9 +59,9 @@ BEGIN
   db1 : debnc GENERIC MAP (debounce_const)
   PORT    MAP (cp_i,rb_i,s1_i,s1_s);
   db2 : debnc GENERIC MAP (debounce_const)
-  PORT    MAP (cp_i,rb_i,s1_i,s1_s);
+  PORT    MAP (cp_i,rb_i,s2_i,s2_s);
   db3 : debnc GENERIC MAP (debounce_const)
-  PORT    MAP (cp_i,rb_i,s1_i,s1_s);
+  PORT    MAP (cp_i,rb_i,s3_i,s3_s);
   ----------------------------------------------------------------
   -- clock divider for baud and 1 hz signals
   top_clock_divider : clock_divider 
@@ -73,7 +73,7 @@ BEGIN
    ----------------------------------------------------------------
    -- Event logger/sensing unit
   top_event_logger : event_logger 
-  PORT MAP (cp_i, rb_i, s1_i, s2_i, s3_i, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
+  PORT MAP (cp_i, rb_i, s1_s, s2_s, s3_s, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
    ----------------------------------------------------------------
    -- UART
   uart : uat 
