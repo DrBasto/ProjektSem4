@@ -1,3 +1,12 @@
+/*
+-- top_e.vhd
+-- ENTITIE for the TOP
+-- 
+-- Author:	Sebastian Romero ID:32303
+-- 			Bahadir Ülkü
+-- Last edited: 19.01.2021
+*/
+
 #include <iostream>
 #include <ctime>
 #include <windows.h>
