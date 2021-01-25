@@ -6,7 +6,7 @@ BEGIN
   
   run_counter: PROCESS (cp_i, rb_i, cl_i, cup_s, cdown_s)
   BEGIN
-	  IF (rb_i = '0') THEN headcount_s <= "000000";
+	  IF (rb_i = '0' OR cl_i = '1' ) THEN headcount_s <= "000000";
 	  ELSIF (cp_i'EVENT AND cp_i = '1') THEN
 			IF (cup_s = '1') AND (cdown_s = '0') THEN headcount_s <= headcount_s + 1;
 			ELSIF (cdown_s = '1') AND (cup_s = '0') THEN headcount_s <= headcount_s - 1;

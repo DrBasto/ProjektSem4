@@ -9,6 +9,7 @@ ENTITY keeper_fsm is
 PORT(
 	  cp_i   : IN  std_logic;
     rb_i   : IN  std_logic;
+	  cl_i : IN std_logic;
     enter_s : IN std_logic;
     exit_s : IN std_logic;
     maxr_s : IN std_logic;

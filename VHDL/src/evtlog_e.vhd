@@ -10,6 +10,7 @@ ENTITY event_logger is
 PORT(
 cp_i   : IN  std_logic;
 rb_i   : IN  std_logic;
+cl_i : IN std_logic;
 s1_i : IN std_logic;
 s2_i : IN std_logic;
 s3_i : IN std_logic;

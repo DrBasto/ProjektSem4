@@ -1,8 +1,6 @@
 /*
--- top_e.vhd
--- ENTITIE for the TOP
--- 
--- Author:	Sebastian Romero ID:32303
+-- C++ File
+-- Author:	Sebastian Romero 
 -- 			Bahadir Ülkü
 -- Last edited: 19.01.2021
 */
@@ -10,8 +8,6 @@
 #include <iostream>
 #include <ctime>
 #include <windows.h>
-
-const int maxPeople = 10;
 
 int main()
 {

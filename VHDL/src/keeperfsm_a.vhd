@@ -10,9 +10,9 @@ ARCHITECTURE ar1 OF keeper_fsm IS
 
     BEGIN
     
-      clkd: PROCESS (rb_i,cp_i)
+      clkd: PROCESS (rb_i,cp_i,cl_i)
       BEGIN
-        IF (rb_i='0') THEN now_st <= idle_st;
+        IF (rb_i='0' OR cl_i = '1') THEN now_st <= idle_st;
         ELSIF (cp_i'EVENT AND cp_i='1') THEN now_st <= nxt_st;
         END IF;
       END PROCESS clkd;

@@ -5,7 +5,7 @@ ARCHITECTURE ar1 OF top IS
   ATTRIBUTE chip_pin of rb_i : SIGNAL IS "E6"; -- S2_USR_BTN_akt_low
   ATTRIBUTE chip_pin of cp_i : SIGNAL IS "H6"; -- CLK_12MHz
 
-  ATTRIBUTE chip_pin of cl_i : SIGNAL IS "G12"; -- Digital in -J2/9
+  ATTRIBUTE chip_pin of cl_i : SIGNAL IS "G12"; -- Digital in -J2/9 
   ATTRIBUTE chip_pin of s1_i : SIGNAL IS "L12"; -- Digital in -J2/1
   ATTRIBUTE chip_pin of s2_i : SIGNAL IS "J12"; -- Digital in -J2/2
   ATTRIBUTE chip_pin of s3_i : SIGNAL IS "J13"; -- Digital in -J2/3
@@ -73,7 +73,7 @@ BEGIN
    ----------------------------------------------------------------
    -- Event logger/sensing unit
   top_event_logger : event_logger 
-  PORT MAP (cp_i, rb_i, s1_s, s2_s, s3_s, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
+  PORT MAP (cp_i, rb_i, cl_i, s1_s, s2_s, s3_s, done_s, finish_s,maxr_s, cup_s, cdown_s, event_s,detect_s, red_s, grn_s, sound_s); 
    ----------------------------------------------------------------
    -- UART
   uart : uat 
